@@ -9,7 +9,7 @@ Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
 2)  Import the numerous registry files, which start with "V-XXXXX" which is the DISA/NIST vulerability ID, by right clicking and select MERGE from the menu to import the DISA specified settings
 3) Run the Win10,bat to disable features and services specified in the DISA STIGs
 
-3) Optional - Import the Windows10FW.wfw to disable all INCOMING Windows Firewall Rules and add a BLOCK ALL -Incoming rule to the top of the firewall rules.
+3) Optional - Import the Windows10FW.wfw to disable all INCOMING traffic and add a "BLOCK ALL -Incoming" rule to the top of the firewall rules.  Absolutely no reason to have incoming traffic allowed on a workstation.
 4) Optional - Import various registry files to disable Windows 10 privacy invasive features.
 5) Reboot
 
