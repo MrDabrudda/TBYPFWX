@@ -11,7 +11,7 @@ Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
 
 3) Run the Win10,bat to disable features and services specified in the DISA STIGs
 
-4) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.
+4) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
 
 5) Reboot
 
