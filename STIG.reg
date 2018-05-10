@@ -327,28 +327,100 @@
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\pku2u]
 "AllowOnlineID"=dword:00000000
 
-;Vulnerability ID - 
+;Vulnerability ID - V-63795
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters]
+"SupportedEncryptionTypes"=dword:7ffffff8
+
+;Vulnerability ID - V-63797
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"NoLmHash"=dword:00000001
+
+;Vulnerability ID - V-63801
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"LmCompatibilityLevel"=dword:00000005
+
+;Vulnerability ID - V-63803
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ldap]
+"ldapclientintegrity"=dword:00000001
+
+;Vulnerability ID - V-63805
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0]
+"NtlmMinClientSec"=dword:20080000
+
+;Vulnerability ID - V-63807
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0]
+"NtlmMinServerSec"=dword:20080000
+
+;Vulnerability ID - V-63811
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy]
+"Enabled"=dword:00000001
+
+;Vulnerability ID - V-63815
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"ProtectionMode"=dword:00000001
+
+;Vulnerability ID - V-63825
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableInstallerDetection"=dword:00000001
+
+;Vulnerability ID - V-63827
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableSecureUIAPaths"=dword:00000001
+
+;Vulnerability ID - V-63829
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000001
+
+;Vulnerability ID - V-63831
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableVirtualization"=dword:00000001
+
+;Vulnerability ID - V-63839
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CurrentVersion\PushNotifications]
+"NoToastApplicationNotificationOnLockScreen"=dword:00000001
+
+;Vulnerability ID - V-65681
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
+"DODownloadMode"=dword:00000001
+
+;Vulnerability ID - V-68849
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"DisableExceptionChainValidation"=dword:00000000
+
+;Vulnerability ID - V-71763
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest]
+"UseLogonCredential"=dword:00000000
+
+;Vulnerability ID - V-71765
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Network Connections]
+"NC_ShowSharedAccessUI"=dword:00000000
+
+;Vulnerability ID - V-71769
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"RestrictRemoteSAM"="O:BAG:BAD:(A;;RC;;;BA)"
+
+;Vulnerability ID - V-71771
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsConsumerFeatures"=dword:00000001
+
+;Vulnerability ID - V-74413
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002]
+"EccCurves"=hex(7):4e,00,69,00,73,00,74,00,50,00,33,00,38,00,34,00,00,00,4e,00,\
+  69,00,73,00,74,00,50,00,32,00,35,00,36,00,00,00,00,00
 
 
-;Vulnerability ID - 
+;Vulnerability ID - V-74417
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR]
+"AllowGameDVR"=dword:00000000
 
+;Vulnerability ID - V-74699
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation]
+"AllowProtectedCreds"=dword:00000001
 
-;Vulnerability ID - 
+;Vulnerability ID - V-74723
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"SMB1"=dword:00000000
 
-
-;Vulnerability ID - 
-
-
-;Vulnerability ID - 
-
-
-;Vulnerability ID - 
-
-
-;Vulnerability ID - 
-
-
-;Vulnerability ID - 
-
-
-;Vulnerability ID - 
+;Vulnerability ID - V-74725
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb10]
+"Start"=dword:00000004
