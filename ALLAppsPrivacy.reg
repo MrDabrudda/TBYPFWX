@@ -1,0 +1,240 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessAccountInfo"=dword:00000002
+"LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessCalendar_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCamera"=dword:00000002
+"LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessContacts"=dword:00000002
+"LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessEmail"=dword:00000002
+"LetAppsAccessEmail_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessEmail_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessEmail_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput"=dword:00000002
+"LetAppsAccessGazeInput_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessLocation"=dword:00000002
+"LetAppsAccessLocation_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessLocation_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessLocation_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging"=dword:00000002
+"LetAppsAccessMessaging_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone"=dword:00000002
+"LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessMotion"=dword:00000002
+"LetAppsAccessMotion_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMotion_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMotion_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications"=dword:00000002
+"LetAppsAccessNotifications_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessTasks"=dword:00000002
+"LetAppsAccessTasks_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessTasks_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessTasks_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessRadios"=dword:00000002
+"LetAppsAccessRadios_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessRadios_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessRadios_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessPhone"=dword:00000002
+"LetAppsAccessPhone_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessPhone_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessPhone_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices"=dword:00000002
+"LetAppsAccessTrustedDevices_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo"=dword:00000002
+"LetAppsGetDiagnosticInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsRunInBackground"=dword:00000002
+"LetAppsRunInBackground_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsRunInBackground_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsRunInBackground_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices"=dword:00000002
+"LetAppsSyncWithDevices_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices_ForceDenyTheseApps"=hex(7):00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AxInstaller\AxISURLZonePolicies]
+"InstallTrustedOCX"=dword:00000000
+"InstallSignedOCX"=dword:00000000
+"InstallUnSignedOCX"=dword:00000000
+"IgnoreUnknownCA"=dword:00000000
+"IgnoreInvalidCN"=dword:00000000
+"IgnoreInvalidCertDate"=dword:00000000
+"IgnoreWrongCertUsage"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"AITEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableUAR"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowSearchToUseLocation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortanaAboveLock"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortanaInAAD"=dword:00000001
+"AllowCortanaInAADPathOOBE"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableWebSearch"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowDeviceNameInTelemetry"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EventViewer]
+"MicrosoftEventVwrDisableLinks"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"Headlines"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"MicrosoftKBSearch"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableHTTPPrinting"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports]
+"PreventHandwritingErrorReports"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC]
+"PreventHandwritingDataSharing"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Internet Connection Wizard]
+"ExitOnMSICW"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableBackoff"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingEmailAttachments"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingOutlook"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingOfflineFiles"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexOnBattery"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingPublicFolders"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingUncachedExchangeFolders"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInternetOpenWith"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoWebServices"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableIndexingDelegateMailboxes"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client]
+"CEIP"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
+@=""
+"NoActiveProbe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoOnlinePrintsWizard"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ExcludedExtensionsMultiline0"=".386;.aps;.bin;.bk1;.bk2;.bkf;.blf;.bsc;.btr;.cat;.cfg;.cgm;.chk;.ci;.crwl;.cur;.dat;.dbg;.dct;.dir;.dl_;.el;.evt;.ex_;.exp;.eyb;.fnt;.fon;.ghi;.gthr;.hqx;.icm;.idb;.idx;.ilk;.imc;.in_;.inl;.inv"
+"ExcludedExtensionsMultiline1"=".ipp;.jbf;.lib;.local;.log;.log1;.log2;.m14;.mac;.man;.manifest;.map;.MAPIMail;.mmf;.mui;.muimanifest;.mv;.ncb;.obj;.oc_;.ocx;.onecache;.onetoc;.onetoc2;.ost;.pch;.pdb;.pds;.pf;.pic;.pma;.pmc;.pml"
+"ExcludedExtensionsMultiline2"=".pmr;.pst;.res;.rmp;.rpc;.rsp;.sbr;.sc2;.sit;.sr_;.sy_;.sym;.TMCONTAINER00000000000000000001;.tlb;.tlh;.tmf;.tmp;.ttc;.ttf;.ttx;.TMCONTAINER00000000000000000002;.ufm;.vbx;.vxd;.wll;.wlt;.xbm;.xix;.z96;.ZFSendToTarget"
+"ExcludedExtensionsMultiline3"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableWebPnPDownload"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableEnterpriseAuthProxy"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoPublishingWizard"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Registration Wizard Control]
+"NoRegistration"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventRemoteQueries"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableRemovableDriveIndexing"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SearchCompanion]
+"DisableContentFileUpdates"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AutoIndexSharedFolders"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchUseWeb"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableTelemetryOptInChangeNotification"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableTelemetryOptInSettingsUx"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableThrottlingOnlineMailboxesValue"=dword:00000006
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingLowDiskSpaceMB"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchPrivacy"=dword:00000003
