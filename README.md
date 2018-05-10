@@ -7,7 +7,7 @@ Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
 
 1)  Import the Win10_LocalSec.inf into the Local Security Policy MMC
 
-2)  Import the numerous registry files, which start with "V-XXXXX" which is the DISA/NIST vulerability ID, by right clicking and select MERGE from the menu to import the DISA specified settings
+2)  Import the STIG.reg file which is the DISA/NIST/NSA recommended setting, by right clicking the file and select MERGE from the menu to import the registry patch.
 
 3) Run the Win10,bat to disable features and services specified in the DISA STIGs
 
