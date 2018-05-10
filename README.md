@@ -9,7 +9,7 @@ Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
 
 2)  Import the STIG.reg file which is the DISA/NIST/NSA recommended setting, by right clicking the file and select MERGE from the menu to import the registry patch.
 
-3) Run the Win10,bat to disable features and services specified in the DISA STIGs
+3) Run the Win10.bat to disable features and services specified in the DISA STIGs
 
 4) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
 
