@@ -159,11 +159,173 @@
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Rpc]
 "RestrictRemoteClients"=dword:00000001
 
-;Vulnerability ID - 
+;Vulnerability ID - V-63659
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"MSAOptional"=dword:00000001
 
+;Vulnerability ID - V-63661
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"MaximumPasswordAge"=dword:0000001e
 
-;Vulnerability ID - 
+;Vulnerability ID - V-63663
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableInventory"=dword:00000001
 
+;Vulnerability ID - V-63665
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"RequireStrongKey"=dword:00000001
+
+;Vulnerability ID - V-63667
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoAutoplayfornonVolume"=dword:00000001
+
+;Vulnerability ID - V-63671
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoAutorun"=dword:00000001
+
+;Vulnerability ID - V-63673
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoDriveTypeAutoRun"=dword:000000ff
+
+;Vulnerability ID - V-63677
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics\FacialFeatures]
+"EnhancedAntiSpoofing"=dword:00000001
+
+;Vulnerability ID - V-63679
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\CredUI]
+"EnumerateAdministrators"=dword:00000000
+
+;Vulnerability ID - V-63683
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000001
+
+;Vulnerability ID - V-63687
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"CachedLogonsCount"="10"
+
+;Vulnerability ID - V-63689
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoDataExecutionPrevention"=dword:00000000
+
+;Vulnerability ID - V-63691
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"NoHeapTerminationOnCorruption"=dword:00000000
+
+;Vulnerability ID - V-63695
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"PreXPSP2ShellProtocolBehavior"=dword:00000000
+
+;Vulnerability ID - V-63697
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"scremoveoption"="1"
+
+;Vulnerability ID - V-63699
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"PreventOverride"=dword:00000001
+
+;Vulnerability ID - V-63701
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"PreventOverrideAppRepUnknown"=dword:00000001
+
+;Vulnerability ID - V-63703
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"RequireSecuritySignature"=dword:00000001
+
+;Vulnerability ID - V-63707
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnableSecuritySignature"=dword:00000001
+
+;Vulnerability ID - V-63711
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters]
+"EnablePlainTextPassword"=dword:00000000
+
+;Vulnerability ID - V-63713
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
+"EnabledV9"=dword:00000001
+
+;Vulnerability ID - V-63715
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"AutoDisconnect"=dword:0000000f
+
+;Vulnerability ID - V-63717
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork]
+"RequireSecurityDevice"=dword:00000001
+
+;Vulnerability ID - V-63719
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"RequireSecuritySignature"=dword:00000001
+
+;Vulnerability ID - V-63723
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"EnableSecuritySignature"=dword:00000001
+
+;Vulnerability ID - V-63725
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+
+;Vulnerability ID - V-63729
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"DisablePasswordSaving"=dword:00000001
+
+;Vulnerability ID - V-63731
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"fDisableCdm"=dword:00000001
+
+;Vulnerability ID - V-63733
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"fPromptForPassword"=dword:00000001
+
+;Vulnerability ID - V-63737
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"fEncryptRPCTraffic"=dword:00000001
+
+;Vulnerability ID - V-63741
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"MinEncryptionLevel"=dword:00000003
+
+;Vulnerability ID - V-63743
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Feeds]
+"DisableEnclosureDownload"=dword:00000001
+
+;Vulnerability ID - V-63745
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"restrictanonymoussam"=dword:00000001
+
+;Vulnerability ID - V-63747
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Internet Explorer\Feeds]
+"AllowBasicAuthInClear"=dword:00000000
+
+;Vulnerability ID - V-63749
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"restrictanonymous"=dword:00000001
+
+;Vulnerability ID - V-63751
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowIndexingEncryptedStoresOrItems"=dword:00000000
+
+;Vulnerability ID - V-63753
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"disabledomaincreds"=dword:00000001
+
+;Vulnerability ID - V-63755
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"everyoneincludesanonymous"=dword:00000000
+
+;Vulnerability ID - V-63759
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
+"RestrictNullSessAccess"=dword:00000001
+
+;Vulnerability ID - V-63763
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"UseMachineId"=dword:00000001
+
+;Vulnerability ID - V-63765
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0]
+"allownullsessionfallback"=dword:00000000
+
+;Vulnerability ID - V-63767
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\pku2u]
+"AllowOnlineID"=dword:00000000
 
 ;Vulnerability ID - 
 
