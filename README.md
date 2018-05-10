@@ -17,6 +17,6 @@ Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
 
 6) You can download the latest DISA STIG Viewer 2.7.1 and select "Open Checklist from File" from the top menu and open the Windows10.ckl to view which vulnerabilities are CLOSED, OPEN, or NA
 
-Most CAT1 & CAT3 vulnerabilities are CLOSED. See the Windows10.ckl in the STIG Viewer to see if any NA or OPEN vulerabilites pertain to you.  I did not enable auditing or BitLocker because those features would kill a systmes performance.
+Most CAT1 & CAT3 vulnerabilities are CLOSED. See the Windows10.ckl in the STIG Viewer to see if any NA or OPEN vulerabilites pertain to you.  I did not enable auditing or BitLocker because those features would kill a system's performance.
 
 Still a work in progress with more privacy setting to come...
