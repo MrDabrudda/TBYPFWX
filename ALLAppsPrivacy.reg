@@ -1,5 +1,6 @@
 Windows Registry Editor Version 5.00
 
+;App Privacy Settings
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
 "LetAppsAccessAccountInfo"=dword:00000002
 "LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
@@ -78,6 +79,7 @@ Windows Registry Editor Version 5.00
 "LetAppsSyncWithDevices_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsSyncWithDevices_ForceDenyTheseApps"=hex(7):00,00
 
+;Disable ActiveX install
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AxInstaller\AxISURLZonePolicies]
 "InstallTrustedOCX"=dword:00000000
 "InstallSignedOCX"=dword:00000000
@@ -87,154 +89,203 @@ Windows Registry Editor Version 5.00
 "IgnoreInvalidCertDate"=dword:00000000
 "IgnoreWrongCertUsage"=dword:00000000
 
+;Deny Application Comapatibility Telemetry
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
 "AITEnable"=dword:00000000
 
+;Deny Steps Recorder
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
 "DisableUAR"=dword:00000001
 
+;Disable Cloud Search
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowCloudSearch"=dword:00000000
 
+;Disable Cortana
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowCortana"=dword:00000000
 
+;Disable Cortana Location Usage
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowSearchToUseLocation"=dword:00000000
 
+;Disable Cortana when screen is locked
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowCortanaAboveLock"=dword:00000000
 
+;Disable Cortana OOBE & AAD Usage
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowCortanaInAAD"=dword:00000001
 "AllowCortanaInAADPathOOBE"=dword:00000000
 
+;Disable Desktop Web Search
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "DisableWebSearch"=dword:00000001
 
+;Disable Device Name Sent to Micro$oft in error reporting
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "AllowDeviceNameInTelemetry"=dword:00000000
 
+;Disable Error Reporting
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
 "Disabled"=dword:00000001
 
+;Disable Event Log ASP Links
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EventViewer]
 "MicrosoftEventVwrDisableLinks"=dword:00000001
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
-"Headlines"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
-"MicrosoftKBSearch"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
-"DisableHTTPPrinting"=dword:00000001
-
+;Disable Handwritting Submissions
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports]
 "PreventHandwritingErrorReports"=dword:00000001
 
+;Disable Handwritting Sharing
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC]
 "PreventHandwritingDataSharing"=dword:00000001
 
+;Disable Help - "Did You Know"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"Headlines"=dword:00000000
+
+;Disable KB Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"MicrosoftKBSearch"=dword:00000000
+
+;Disable HTTP Printing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableHTTPPrinting"=dword:00000001
+
+;Disable Internet Connection Wizard
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Internet Connection Wizard]
 "ExitOnMSICW"=dword:00000001
 
+;Allow Indexing Backoff when system in use
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "DisableBackoff"=dword:00000000
 
+;Disable indexing of email attachments
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexingEmailAttachments"=dword:00000001
 
+;Disable indexing of M$ Outlook
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexingOutlook"=dword:00000001
 
+;Disable indexing of offline files
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexingOfflineFiles"=dword:00000001
 
+;Disable indexing while on battery power
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexOnBattery"=dword:00000001
 
+;Disable indexing of public folders
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexingPublicFolders"=dword:00000001
 
+;Disable indexing of uncached exchange folder
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexingUncachedExchangeFolders"=dword:00000001
 
+;Disable internet file associations
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoInternetOpenWith"=dword:00000001
 
+;Disable internet order wizard
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoWebServices"=dword:00000001
 
+;Limit diagnostic data submitted to Micro$oft 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000000
 
+;Disable indexing of delegate mailboxes
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "EnableIndexingDelegateMailboxes"=dword:00000000
 
+;Disable M$ Messenger Customer Experience "Improvement" Program
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client]
 "CEIP"=dword:00000002
 
+;Disable network connectivity test
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
 @=""
 "NoActiveProbe"=dword:00000001
 
+;Disable Order Prints
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoOnlinePrintsWizard"=dword:00000001
 
+;Do not index the following files
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "ExcludedExtensionsMultiline0"=".386;.aps;.bin;.bk1;.bk2;.bkf;.blf;.bsc;.btr;.cat;.cfg;.cgm;.chk;.ci;.crwl;.cur;.dat;.dbg;.dct;.dir;.dl_;.el;.evt;.ex_;.exp;.eyb;.fnt;.fon;.ghi;.gthr;.hqx;.icm;.idb;.idx;.ilk;.imc;.in_;.inl;.inv"
 "ExcludedExtensionsMultiline1"=".ipp;.jbf;.lib;.local;.log;.log1;.log2;.m14;.mac;.man;.manifest;.map;.MAPIMail;.mmf;.mui;.muimanifest;.mv;.ncb;.obj;.oc_;.ocx;.onecache;.onetoc;.onetoc2;.ost;.pch;.pdb;.pds;.pf;.pic;.pma;.pmc;.pml"
 "ExcludedExtensionsMultiline2"=".pmr;.pst;.res;.rmp;.rpc;.rsp;.sbr;.sc2;.sit;.sr_;.sy_;.sym;.TMCONTAINER00000000000000000001;.tlb;.tlh;.tmf;.tmp;.ttc;.ttf;.ttx;.TMCONTAINER00000000000000000002;.ufm;.vbx;.vxd;.wll;.wlt;.xbm;.xix;.z96;.ZFSendToTarget"
 "ExcludedExtensionsMultiline3"=""
 
+;Disable print driver downloads
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
 "DisableWebPnPDownload"=dword:00000001
 
+;Disable proxy setting for CEIP
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "DisableEnterpriseAuthProxy"=dword:00000001
 
+;Disable publish to web
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "NoPublishingWizard"=dword:00000001
 
+;Disable registration wizard
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Registration Wizard Control]
 "NoRegistration"=dword:00000001
 
+;Disable remote index queries
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventRemoteQueries"=dword:00000001
 
+;Disable indexing of removable drive libraries
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "DisableRemovableDriveIndexing"=dword:00000001
 
+;Disable Search Companion
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SearchCompanion]
 "DisableContentFileUpdates"=dword:00000001
 
+;Disable indexing of shared folders
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AutoIndexSharedFolders"=dword:00000001
 
+;Disable show feedback notifications
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "DoNotShowFeedbackNotifications"=dword:00000001
 
+;Disable web search results in start menu
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "ConnectedSearchUseWeb"=dword:00000000
 
+;Disable web search over metered connections
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
 
+;Disable Windows Customer Experience "Improvement" Program
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
 "CEIPEnable"=dword:00000000
 
+;Enable telemetry change notifications
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "DisableTelemetryOptInChangeNotification"=dword:00000001
 
+;Enable telemetry interface
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "DisableTelemetryOptInSettingsUx"=dword:00000001
 
+;Enable throttling of indexing mail
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "EnableThrottlingOnlineMailboxesValue"=dword:00000006
 
+;Prevent indexing when space is below 1024MB
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventIndexingLowDiskSpaceMB"=dword:00000400
 
+;Only share anonymous info in Bing searches
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "ConnectedSearchPrivacy"=dword:00000003
