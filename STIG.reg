@@ -1,3 +1,5 @@
+Windows Registry Editor Version 5.00
+
 ;Vulnerability ID - V-63325
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
 "AlwaysInstallElevated"=dword:00000000
