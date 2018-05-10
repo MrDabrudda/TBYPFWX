@@ -1,0 +1,192 @@
+;Vulnerability ID - V-63325
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
+"AlwaysInstallElevated"=dword:00000000
+
+;Vulnerability ID - V-63329
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
+"SafeForScripting"=dword:00000000
+
+;Vulnerability ID - V-63333
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000001
+
+;Vulnerability ID - V-63335
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client]
+"AllowBasic"=dword:00000000
+
+;Vulnerability ID - V-63339
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client]
+"AllowUnencryptedTraffic"=dword:00000000
+
+;Vulnerability ID - V-63341
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client]
+"AllowDigest"=dword:00000000
+
+;Vulnerability ID - V-63347
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service]
+"AllowBasic"=dword:00000000
+
+;Vulnerability ID - V-63369
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service]
+"AllowUnencryptedTraffic"=dword:00000000
+
+;Vulnerability ID - V-63375
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service]
+"DisableRunAs"=dword:00000001
+
+;Vulnerability ID - V-63519
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application]
+"MaxSize"=dword:00008000
+
+;Vulnerability ID - V-63523
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security]
+"MaxSize"=dword:000fa000
+
+;Vulnerability ID - V-63527
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EventLog\System]
+"MaxSize"=dword:00008000
+
+;Vulnerability ID - V-63545
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreenCamera"=dword:00000001
+
+;Vulnerability ID - V-63555
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters]
+"DisableIpSourceRouting"=dword:00000002
+
+;Vulnerability ID - V-63559
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"DisableIPSourceRouting"=dword:00000002
+
+;Vulnerability ID - V-63563
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"EnableICMPRedirect"=dword:00000000
+
+;Vulnerability ID - V-63567
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Parameters]
+"NoNameReleaseOnDemand"=dword:00000001
+
+;Vulnerability ID - V-63569
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation]
+"AllowInsecureGuestAuth"=dword:00000000
+
+;Vulnerability ID - V-63577
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths]
+"\\\\*\\SYSVOL"="RequiredMutualAuthentication=1, RequireIntegrity=1"
+"\\\\*\\NETLOGON"="RequiredMutualAuthentication=1, RequireIntegrity=1"
+
+;Vulnerability ID - V-63581
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\GroupPolicy]
+"fMinimizeConnections"=dword:00000001
+
+;Vulnerability ID - V-63585
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WcmSvc\GroupPolicy]
+"fBlockNonDomain"=dword:00000001
+
+;Vulnerability ID - V-63591
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config]
+"AutoConnectAllowedOEM"=dword:00000000
+
+;Vulnerability ID - V-63595
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
+"EnableVirtualizationBasedSecurity"=dword:00000001
+
+;Vulnerability ID - V-63603
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
+"HypervisorEnforcedCodeIntegrity"=dword:00000002
+
+;Vulnerability ID - V-63607
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\EarlyLaunch]
+"DriverLoadPolicy"=dword:00000007
+
+;Vulnerability ID - V-63609
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}]
+"NoGPOListChanges"=dword:00000000
+
+;Vulnerability ID - V-63615
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableWebPnPDownload"=dword:00000001
+
+;Vulnerability ID - V-63617
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"LimitBlankPasswordUse"=dword:00000001
+
+;Vulnerability ID - V-63621
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoWebServices"=dword:00000001
+
+;Vulnerability ID - V-63623
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableHTTPPrinting"=dword:00000001
+
+;Vulnerability ID - V-63627
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters]
+"DevicePKInitEnabled"=dword:00000001
+
+;Vulnerability ID - V-63629
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"DontDisplayNetworkSelectionUI"=dword:00000001
+
+;Vulnerability ID - V-63639
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"RequireSignOrSeal"=dword:00000001
+
+;Vulnerability ID - V-63643
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"SealSecureChannel"=dword:00000001
+
+;Vulnerability ID - V-63645
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51]
+"DCSettingIndex"=dword:00000001
+
+;Vulnerability ID - V-63647
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"SignSecureChannel"=dword:00000001
+
+;Vulnerability ID - V-63649
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51]
+"ACSettingIndex"=dword:00000001
+
+;Vulnerability ID - V-63651
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
+"fAllowToGetHelp"=dword:00000000
+
+;Vulnerability ID - V-63653
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"DisablePasswordChange"=dword:00000000
+
+;Vulnerability ID - V-63657
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Rpc]
+"RestrictRemoteClients"=dword:00000001
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
+
+
+;Vulnerability ID - 
