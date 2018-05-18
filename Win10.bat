@@ -4,7 +4,7 @@ bcdedit /set {current} nx OptOut
 rem List all features
 rem DISM /online /get-features /format:table | more
 
-Disable Insecure Protocols
+rem Disable Insecure Protocols
 DISM /online /disable-feature /featurename:SNMP
 DISM /online /disable-feature /featurename:SimpleTCP
 DISM /online /disable-feature /featurename:TelnetClient
