@@ -321,3 +321,7 @@ Windows Registry Editor Version 5.00
 ;Disable Apps access to cellular data
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\cellularData]
 "Value"="Deny"
+
+;Disable advanced indexing options
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventUsingAdvancedIndexingOptions"=dword:00000001
