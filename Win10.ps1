@@ -91,9 +91,9 @@ Get-AppxPackage -allusers *Print3D* | Remove-AppxPackage
 #Set-Service AJRouter -StartupType Disabled
 #Set-Service ALG -StartupType Disabled
 #Set-Service AppMgmt -StartupType Disabled
-#Set-Service tzautoupdate -StartupType Disabled
 #Set-Service BITS -StartupType Automatic
-#Set-Service BthHFSrv -StartupType Disabled
+
+#Set-Service BthHFSrv -StartupType Automatic
 #Set-Service bthserv -StartupType Disabled
 #Set-Service PeerDistSvc -StartupType Disabled
 #Set-Service CertPropSvc -StartupType Disabled
@@ -143,6 +143,7 @@ Get-AppxPackage -allusers *Print3D* | Remove-AppxPackage
 #Set-Service SNMPTRAP -StartupType Disabled
 #Set-Service SSDPSRV -StartupType Disabled
 #Set-Service TabletInputService -StartupType Disabled
+#Set-Service tzautoupdate -StartupType Disabled
 #Set-Service UevAgentService -StartupType Disabled
 #Set-Service WebClient -StartupType Disabled
 #Set-Service WFDSConSvc -StartupType Disabled
