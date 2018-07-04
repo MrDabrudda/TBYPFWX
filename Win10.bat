@@ -23,13 +23,26 @@ rem V-74719
 sc config seclogon start= disabled
 sc stop seclogon
 
-rem disable DiagTrack services
+rem disable DiagTrack and other useless services
 sc config dmwappushsvc start= disabled
 sc stop dmwappushsvc
 sc delete dmwappushsvc
 sc config DiagTrack start= disabled
 sc stop DiagTrack
 sc delete DiagTrack
+sc config retaildemo start= disabled
+sc stop retaildemo
+sc delete retaildemo
+sc config RemoteRegistry start= disabled
+sc stop RemoteRegistry
+sc config SSDPSRV start= disabled
+sc stop SSDPSRV
+sc config upnphost start= disabled
+sc stop upnphost
+sc config wisvc start= disabled
+sc stop wisvc
+sc config WSearch start= disabled
+sc stop WSearch
 
 rem delete DiagTracker event log
 del /F /S  C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
