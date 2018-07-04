@@ -23,3 +23,9 @@ dir /S /P *.pfx
 rem V-74719
 sc config seclogon start= disabled
 sc stop seclogon
+
+rem disable DiagTrack services
+sc config dmwappushsvc start= disabled
+sc stop dmwappushsvc
+sc config DiagTrack start= disabled
+sc stop DiagTrack
