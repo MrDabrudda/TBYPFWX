@@ -37,7 +37,6 @@ Get-AppxPackage -allusers *MicrosoftSolitaireCollection* | Remove-AppxPackage
 Get-AppxPackage -allusers *Office.OneNote* | Remove-AppxPackage
 Get-AppxPackage -allusers *People* | Remove-AppxPackage
 Get-AppxPackage -allusers *SkypeApp* | Remove-AppxPackage
-##Get-AppxPackage -allusers *WindowsAlarms* | Remove-AppxPackage
 Get-AppxPackage -allusers *WindowsCamera* | Remove-AppxPackage
 Get-AppxPackage -allusers *windowscommunicationsapps* | Remove-AppxPackage
 Get-AppxPackage -allusers *WindowsSoundRecorder* | Remove-AppxPackage
@@ -46,7 +45,6 @@ Get-AppxPackage -allusers *ZuneMusic* | Remove-AppxPackage
 Get-AppxPackage -allusers *ZuneVideo* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *AdobePhotoshopExpress* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *eclipseManager* | Remove-AppxPackage
-##Get-AppxPackage -AllUsers *Microsoft.RemoteDesktop* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *NetworkSpeedTest* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Office.Sway* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *MicrosoftPowerBIForWindows* | Remove-AppxPackage
@@ -60,17 +58,12 @@ Get-AppxPackage -allusers *royalrevolt* | Remove-AppxPackage
 Get-AppxPackage -allusers *king.com* | Remove-AppxPackage
 get-AppxPackage -allusers *Minecraft* | Remove-AppxPackage
 Get-AppxPackage -allusers *Bing* | Remove-AppxPackage
-##Get-AppxPackage -allusers *WindowsStore* | Remove-AppxPackage
 Get-AppxPackage -allusers *OneConnect* | Remove-AppxPackage
-##Get-AppxPackage -allusers *DesktopAppInstaller* | Remove-AppxPackage
 Get-AppxPackage -allusers *Getstarted* | Remove-AppxPackage
 Get-AppxPackage -allusers *Xbox* | Remove-AppxPackage
-##Get-AppxPackage -allusers *MSPaint* | Remove-AppxPackage
 Get-AppxPackage -allusers *WindowsMaps* | Remove-AppxPackage
 Get-AppxPackage -allusers *MarchofEmpires* | Remove-AppxPackage
 Get-AppxPackage -allusers *VCLibs* | Remove-AppxPackage
-##Get-AppxPackage -allusers *PurchaseApp* | Remove-AppxPackage
-##Get-AppxPackage -allusers *StorePurchaseApp* | Remove-AppxPackage
 Get-AppxPackage -allusers *MicrosoftStickyNotes* | Remove-AppxPackage
 Get-AppxPackage -allusers *Store.Engagement* | Remove-AppxPackage
 Get-AppxPackage -allusers *Advertising* | Remove-AppxPackage
