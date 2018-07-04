@@ -1,8 +1,0 @@
-Administrative Templates/System/Internet Communications Management/Internet Communication settings
-Disable bunch of junk settings in this
-
-Administrative Templates/Windows Components/Data Collection and Preview Builds
-Disable bunch of junk setting in this
-
-Administrative Templates/Windows Components/Search
-Disable bunch of junk setting in this
