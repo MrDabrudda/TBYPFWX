@@ -15,7 +15,6 @@ DISM /online /disable-feature /featurename:SMB1Protocol
 DISM /online /disable-feature /featurename:SMB1Protocol-Client
 DISM /online /disable-feature /featurename:SMB1Protocol-Server
 
-
 rem Find *.p12 and *.pfx files (Should delete these files if found)
 dir /S /P *.p12
 dir /S /P *.pfx
