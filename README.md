@@ -11,11 +11,13 @@ Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
 
 3) Run the Win10.bat to disable features and services specified in the DISA STIGs
 
-4) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
+4) Run the Win10.ps1 to uninstall the crap apps Microsoft installs
 
-5) Reboot
+5) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
 
-6) You can download the latest DISA STIG Viewer 2.7.1 and select "Open Checklist from File" from the top menu and open the Windows10.ckl to view which vulnerabilities are CLOSED, OPEN, or NA
+6) Reboot
+
+7) You can download the latest DISA STIG Viewer 2.7.1 and select "Open Checklist from File" from the top menu and open the Windows10.ckl to view which vulnerabilities are CLOSED, OPEN, or NA
 
 Most CAT1 & CAT3 vulnerabilities are CLOSED. See the Windows10.ckl in the STIG Viewer to see if any NA or OPEN vulerabilites pertain to you.  I did not enable auditing or BitLocker because those features would kill a system's performance.
 
