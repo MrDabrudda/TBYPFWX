@@ -199,7 +199,7 @@ Windows Registry Editor Version 5.00
 
 ;Vulnerability ID - V-63683
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
-"AllowTelemetry"=dword:00000001
+"AllowTelemetry"=dword:00000000
 
 ;Vulnerability ID - V-63687
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
