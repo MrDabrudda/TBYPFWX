@@ -26,8 +26,10 @@ sc stop seclogon
 rem disable DiagTrack services
 sc config dmwappushsvc start= disabled
 sc stop dmwappushsvc
+sc delete dmwappushsvc
 sc config DiagTrack start= disabled
 sc stop DiagTrack
+sc delete DiagTrack
 
 rem delete DiagTracker event log
 del /F /S  C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
