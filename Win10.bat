@@ -32,3 +32,12 @@ sc stop DiagTrack
 
 rem delete DiagTracker event log
 del /F /S  C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
+
+rem delete Customer Experience Improvement scheduled tasks
+schtasks /delete /F /TN "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator"
+schtasks /delete /F /TN "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
+schtasks /delete /F /TN "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"
+schtasks /delete /F /TN "\Microsoft\Windows\Customer Experience Improvement Program\Uploader"
+schtasks /delete /F /TN "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
+schtasks /delete /F /TN "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
+schtasks /delete /F /TN \Microsoft\Windows\Autochk\Proxy
