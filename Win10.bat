@@ -40,3 +40,7 @@ schtasks /delete /F /TN "\Microsoft\Windows\Customer Experience Improvement Prog
 schtasks /delete /F /TN "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
 schtasks /delete /F /TN "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
 schtasks /delete /F /TN \Microsoft\Windows\Autochk\Proxy
+
+rem Uninstall OneDrive
+C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall
+C:\Windows\System32\OneDriveSetup.exe /uninstall
