@@ -66,7 +66,6 @@ Get-AppxPackage -allusers *Getstarted* | Remove-AppxPackage
 Get-AppxPackage -allusers *Xbox* | Remove-AppxPackage
 Get-AppxPackage -allusers *WindowsMaps* | Remove-AppxPackage
 Get-AppxPackage -allusers *MarchofEmpires* | Remove-AppxPackage
-Get-AppxPackage -allusers *VCLibs* | Remove-AppxPackage
 Get-AppxPackage -allusers *MicrosoftStickyNotes* | Remove-AppxPackage
 Get-AppxPackage -allusers *Store.Engagement* | Remove-AppxPackage
 Get-AppxPackage -allusers *Advertising* | Remove-AppxPackage
