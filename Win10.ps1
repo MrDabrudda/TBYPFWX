@@ -73,7 +73,6 @@ Get-AppxPackage -allusers *Plex* | Remove-AppxPackage
 Get-AppxPackage -allusers *Keeper* | Remove-AppxPackage
 Get-AppxPackage -allusers *SketchBook* | Remove-AppxPackage
 Get-AppxPackage -allusers *Feedback* | Remove-AppxPackage
-Get-AppxPackage -allusers *Photos* | Remove-AppxPackage
 Get-AppxPackage -allusers *Wallet* | Remove-AppxPackage
 Get-AppxPackage -allusers *3DViewer* | Remove-AppxPackage
 Get-AppxPackage -allusers *Miracast* | Remove-AppxPackage
