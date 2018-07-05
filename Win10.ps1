@@ -1,3 +1,6 @@
+##Run Powershell ISE as an admin and run the following command
+##set-executionpolicy unrestricted
+
 ##Remove apps system wide
 ##Get-ProvisionedAppXPackage -Online|Select DisplayName
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*3DBuilder*"} | Remove-AppxProvisionedPackage -Online
