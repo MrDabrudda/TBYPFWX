@@ -5,3 +5,5 @@ for /f "tokens=1*" %%i in ('wevtutil el') do (
 )
 wevtutil cl System
 endlocal
+
+FSUTIL USN DELETEJOURNAL /D C:
