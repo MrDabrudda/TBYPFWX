@@ -11,3 +11,4 @@ FSUTIL USN DELETEJOURNAL /D C:
 
 rem delete VSS Shadow Copies
 vssadmin delete shadows /all
+vssadmin Resize ShadowStorage /For=C: /On=C: /MaxSize=300MB
