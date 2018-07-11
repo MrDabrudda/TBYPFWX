@@ -6,4 +6,8 @@ for /f "tokens=1*" %%i in ('wevtutil el') do (
 wevtutil cl System
 endlocal
 
+rem delete USN journals
 FSUTIL USN DELETEJOURNAL /D C:
+
+rem delete VSS Shadow Copies
+vssadmin delete shadows /all
