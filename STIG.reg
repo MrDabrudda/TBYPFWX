@@ -92,6 +92,7 @@ Windows Registry Editor Version 5.00
 ;Vulnerability ID - V-63595
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
 "EnableVirtualizationBasedSecurity"=dword:00000001
+"RequirePlatformSecurityFeatures"=dword:00000003
 
 ;Vulnerability ID - V-63603
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
@@ -427,7 +428,3 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb10]
 "Start"=dword:00000004
 
-;Vulnerability ID - V-63595
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
-"EnableVirtualizationBasedSecurity"=dword:00000001
-"RequirePlatformSecurityFeatures"=dword:00000003
