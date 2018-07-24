@@ -94,6 +94,10 @@ Windows Registry Editor Version 5.00
 "EnableVirtualizationBasedSecurity"=dword:00000001
 "RequirePlatformSecurityFeatures"=dword:00000003
 
+;Vulnerability ID - V-63599
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
+"LsaCfgFlags"=dword:00000001
+
 ;Vulnerability ID - V-63603
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
 "HypervisorEnforcedCodeIntegrity"=dword:00000002
