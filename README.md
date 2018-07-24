@@ -1,7 +1,7 @@
 # TBYPFWX
 Take Back Your Privacy From Windows 10
 
-Windows 10 DISA STIG Setting for Windows 10 V1R13 STIG from 27 April 2018
+Windows 10 DISA STIG Setting for Windows 10 V1R14 STIG from 20 JULY 2018
 
 ***Backup your computer!!!  Use a backup software such as Acronis, Norton Ghost or I highly recommend Clonezilla.  Also take a Restore Point snapshot using System Restore.  I assume you know exactly what you are doing and I am not responsible for your computer getting borked up.  Use at your own risk.***
 
