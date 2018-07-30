@@ -14,10 +14,13 @@ Windows Registry Editor Version 5.00
 "LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
+
+;Change this from 2 to 0 to allow apps access to camera
 "LetAppsAccessCamera"=dword:00000002
 "LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+
 "LetAppsAccessContacts"=dword:00000002
 "LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessContacts_ForceAllowTheseApps"=hex(7):00,00
@@ -38,10 +41,13 @@ Windows Registry Editor Version 5.00
 "LetAppsAccessMessaging_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessMessaging_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
+
+;Change this from 2 to 0 to allow apps access to microphone
 "LetAppsAccessMicrophone"=dword:00000002
 "LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
+
 "LetAppsAccessMotion"=dword:00000002
 "LetAppsAccessMotion_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessMotion_ForceAllowTheseApps"=hex(7):00,00
