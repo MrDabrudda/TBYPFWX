@@ -1,0 +1,16 @@
+#Blocked
+#
+127.0.0.1 localhost #IPv4 localhost
+::1 localhost #IPv6 localhost
+#
+127.0.0.1	tsyndicate.com
+127.0.0.1	trafficjunky.net
+127.0.0.1	trafficjunky.com
+127.0.0.1	progentra.com
+127.0.0.1	freeadult.games
+127.0.0.1	forhims.com
+127.0.0.1	porngames.adult
+127.0.0.1	securegfm.com
+127.0.0.1	abbp1.com
+127.0.0.1	cp.abbp1.com
+127.0.0.1	nsimg.net
