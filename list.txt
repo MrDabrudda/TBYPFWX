@@ -1,15 +1,15 @@
 # Blocked
 
-tsyndicate.com
-trafficjunky.net
-trafficjunky.com
-progentra.com
-freeadult.games
-forhims.com
-porngames.adult
-securegfm.com
-abbp1.com
-cp.abbp1.com
-nsimg.net
-online-metrix.net
-threatmetrix.com
+local-data "tsyndicate.com" 60 IN 10.10.10.1
+local-data "trafficjunky.net" 60 IN 10.10.10.1
+local-data "trafficjunky.com" 60 IN 10.10.10.1
+local-data "progentra.com" 60 IN 10.10.10.1
+local-data "freeadult.games" 60 IN 10.10.10.1
+local-data "forhims.com" 60 IN 10.10.10.1
+local-data "porngames.adult" 60 IN 10.10.10.1
+local-data "securegfm.com" 60 IN 10.10.10.1
+local-data "abbp1.com" 60 IN 10.10.10.1
+local-data "cp.abbp1.com" 60 IN 10.10.10.1
+local-data "nsimg.net" 60 IN 10.10.10.1
+local-data "online-metrix.net" 60 IN 10.10.10.1
+local-data "threatmetrix.com" 60 IN 10.10.10.1
