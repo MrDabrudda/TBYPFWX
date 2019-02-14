@@ -43,7 +43,7 @@ Windows Registry Editor Version 5.00
 "LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
 
 ;Change this from 2 to 0 to allow apps access to microphone
-"LetAppsAccessMicrophone"=dword:00000002
+"LetAppsAccessMicrophone"=dword:00000000
 "LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
