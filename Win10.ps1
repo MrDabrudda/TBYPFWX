@@ -1,8 +1,9 @@
 ##Run Powershell ISE as an admin and run the following command
 ##set-executionpolicy unrestricted
+##How to list apps
+##Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName or Get-ProvisionedAppXPackage -Online|Select DisplayName
 
 ##Remove apps system wide
-##Get-ProvisionedAppXPackage -Online|Select DisplayName
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*3DBuilder*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Getstarted*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*MicrosoftOfficeHub*"} | Remove-AppxProvisionedPackage -Online
@@ -31,8 +32,17 @@ Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Messag
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Wallet*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*windowscommunicationsapps*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*FeedBack*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Phototastic*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Fitbit*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Cooking*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*YourPhone*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*ScreenSketch*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.GetHelp*"} | Remove-AppxProvisionedPackage -Online
+
+
 
 ## Removes metro apps for the current user
+##List all installed packages: Get-AppxPackage
 Get-AppxPackage -allusers *3DBuilder* | Remove-AppxPackage
 Get-AppxPackage -allusers *Messaging* | Remove-AppxPackage
 Get-AppxPackage -allusers *MicrosoftOfficeHub* | Remove-AppxPackage
@@ -86,6 +96,15 @@ Get-AppxPackage -allusers *Help* | Remove-AppxPackage
 Get-AppxPackage -allusers *OneDrive* | Remove-AppxPackage
 Get-AppxPackage -allusers *Holo* | Remove-AppxPackage
 Get-AppxPackage -allusers *Print3D* | Remove-AppxPackage
+Get-AppxPackage -allusers *Phototastic* | Remove-AppxPackage
+Get-AppxPackage -allusers *Fitbit* | Remove-AppxPackage
+Get-AppxPackage -allusers *Cooking* | Remove-AppxPackage
+Get-AppxPackage -allusers *YourPhone* | Remove-AppxPackage
+Get-AppxPackage -allusers *ScreenSketch* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.GetHelp* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Microsoft PowerBIforWindows* | Remove-AppxPackage
+
+
 
 ## Disable Services
 Set-Service dmwappushservice -StartupType Disabled
