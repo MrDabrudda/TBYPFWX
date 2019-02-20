@@ -38,7 +38,40 @@ Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Cookin
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*YourPhone*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*ScreenSketch*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.GetHelp*"} | Remove-AppxProvisionedPackage -Online
-
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Microsoft PowerBIforWindows*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*ActiproSoftwareLLC.562882FEEB491*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*46928bounde.EclipseManager*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*PandoraMediaInc.29680B314EFC2*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*AdobeSystemIncorporated. AdobePhotoshop*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*D5EA27B7.Duolingo- LearnLanguagesforFree*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.NetworkSpeedTest*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.BingNews*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Advertising.Xaml*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Flipboard.Flipboard*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*A97ECD55.KYOCERAPrintCenter*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*TheNewYorkTimes.NYTCrossword*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Windows.CBSPreview*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.ZuneVideo*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Microsoftskydrive*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Messaging*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.People*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.SkypeApp*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.3DBuilder*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.BingWeather*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.MicrosoftOfficeHub*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.MicrosoftSolitaireCollection*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.OneConnect*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Print3D*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Wallet*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.WindowsCamera*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.WindowsFeedbackHub*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.WindowsSoundRecorder*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Xbox.TCUI*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxApp*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxGameOverlay*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxGamingOverlay*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxIdentityProvider*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxSpeechToTextOverlay*"} | Remove-AppxProvisionedPackage -Online
 
 
 ## Removes metro apps for the current user
@@ -103,7 +136,40 @@ Get-AppxPackage -allusers *YourPhone* | Remove-AppxPackage
 Get-AppxPackage -allusers *ScreenSketch* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.GetHelp* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.Microsoft PowerBIforWindows* | Remove-AppxPackage
-
+Get-AppxPackage -allusers *ActiproSoftwareLLC.562882FEEB491* | Remove-AppxPackage
+Get-AppxPackage -allusers *46928bounde.EclipseManager* | Remove-AppxPackage
+Get-AppxPackage -allusers *PandoraMediaInc.29680B314EFC2* | Remove-AppxPackage
+Get-AppxPackage -allusers *AdobeSystemIncorporated. AdobePhotoshop* | Remove-AppxPackage
+Get-AppxPackage -allusers *D5EA27B7.Duolingo- LearnLanguagesforFree* | Remove-AppxPackage
+Get-AppxPackage -allusers *AMicrosoft.NetworkSpeedTest* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.BingNews* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Advertising.Xaml* | Remove-AppxPackage
+Get-AppxPackage -allusers *Flipboard.Flipboard* | Remove-AppxPackage
+Get-AppxPackage -allusers *A97ECD55.KYOCERAPrintCenter* | Remove-AppxPackage
+Get-AppxPackage -allusers *TheNewYorkTimes.NYTCrossword* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.ZuneVideo* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Microsoftskydrive* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Messaging* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.People* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.ZuneMusic* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.SkypeApp* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.3DBuilder* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.BingWeather* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.MicrosoftSolitaireCollection* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.OneConnect* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Print3D* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Wallet* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.WindowsCamera* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.WindowsSoundRecorder* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Xbox.TCUI* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.XboxApp* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.XboxGameOverlay* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage
 
 
 ## Disable Services
