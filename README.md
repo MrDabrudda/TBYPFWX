@@ -1,5 +1,10 @@
 # TBYPFWX
+*****STILL A WORK IN PROGRESS*****  NOT UPDATED YET.  WHEN THIS HEADER IS REMOVED THEN THIS VERSION IS FINAL
+
+
 Take Back Your Privacy From Windows 10
+
+STIG Updates for DISA STIG Ver. 1 Rel 16
 
 Windows 10 DISA STIG Setting for Windows 10 V1R14 STIG from 20 JULY 2018
 
