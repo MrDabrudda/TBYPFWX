@@ -249,13 +249,14 @@ Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
 
+#Credit to https://github.com/Sycnex/Windows10Debloater
 Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse
 Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse
 Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse
 Remove-Item "$env:SYSTEMDRIVE\OneDriveTemp" -Force -Recurse
 
 #Loads the registry keys/values below into the NTUSER.DAT file which prevents the apps from redownloading. Credit to a60wattfish
-#Credit https://github.com/Sycnex/Windows10Debloater
+#Credit to https://github.com/Sycnex/Windows10Debloater
 reg load HKU\Default_User C:\Users\Default\NTUSER.DAT
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name SystemPaneSuggestionsEnabled -Value 0
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name PreInstalledAppsEnabled -Value 0
