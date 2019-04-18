@@ -248,3 +248,8 @@ Set-Service xbgm -StartupType Disabled
 Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
+
+Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse
+Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse
+Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse
+Remove-Item "$env:SYSTEMDRIVE\OneDriveTemp" -Force -Recurse
