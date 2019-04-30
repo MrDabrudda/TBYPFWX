@@ -172,6 +172,19 @@ Get-AppxPackage -allusers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage
 Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
 
+Get-AppxPackage -allusers *SpotifyAB.SpotifyMusic* | Remove-AppxPackage
+Get-AppxPackage -allusers *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.WindowsAlarms* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Appconnector* | Remove-AppxPackage
+Get-AppxPackage -allusers *icrosoft.Asphalt8Airborne* | Remove-AppxPackage
+
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+
+
+
+
 
 ## Disable Services
 Set-Service dmwappushservice -StartupType Disabled
