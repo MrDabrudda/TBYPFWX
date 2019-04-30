@@ -177,7 +177,25 @@ Get-AppxPackage -allusers *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Rem
 Get-AppxPackage -allusers *Microsoft.WindowsAlarms* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.Appconnector* | Remove-AppxPackage
 Get-AppxPackage -allusers *icrosoft.Asphalt8Airborne* | Remove-AppxPackage
+Get-AppxPackage -allusers *microsoft.windowscommunicationsapps* | Remove-AppxPackage
+Get-AppxPackage -allusers *king.com.CandyCrushSaga* | Remove-AppxPackage
+Get-AppxPackage -allusers *king.com.CandyCrushSodaSaga* | Remove-AppxPackage
+Get-AppxPackage -allusers *king.com.CandyCrushFriends* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.DrawboardPDF* | Remove-AppxPackage
+Get-AppxPackage -allusers *FarmVille2CountryEscape* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.GetHelp* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Getstarted* | Remove-AppxPackage
+Get-AppxPackage -allusers *Todos* | Remove-AppxPackage
 
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
+Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
 Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
 Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
 Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
