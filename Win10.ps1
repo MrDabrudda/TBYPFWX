@@ -41,7 +41,7 @@ Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Micros
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.Microsoft PowerBIforWindows*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*ActiproSoftwareLLC.562882FEEB491*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*46928bounde.EclipseManager*"} | Remove-AppxProvisionedPackage -Online
-Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*PandoraMediaInc.29680B314EFC2*"} | Remove-AppxProvisionedPackage -Online
+Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*PandoraMediaInc*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*AdobeSystemIncorporated. AdobePhotoshop*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*D5EA27B7.Duolingo- LearnLanguagesforFree*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.NetworkSpeedTest*"} | Remove-AppxProvisionedPackage -Online
@@ -100,7 +100,7 @@ Get-AppxPackage -AllUsers *WinJS.2.0* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Twitter* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Facebook* | Remove-AppxPackage
 Get-AppxPackage -allUsers *drawboard* | Remove-AppxPackage
-Get-AppxPackage -allusers *royalrevolt* | Remove-AppxPackage
+Get-AppxPackage -allusers *RoyalRevolt* | Remove-AppxPackage
 Get-AppxPackage -allusers *king.com* | Remove-AppxPackage
 get-AppxPackage -allusers *Minecraft* | Remove-AppxPackage
 Get-AppxPackage -allusers *Bing* | Remove-AppxPackage
@@ -138,7 +138,6 @@ Get-AppxPackage -allusers *Microsoft.GetHelp* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.Microsoft PowerBIforWindows* | Remove-AppxPackage
 Get-AppxPackage -allusers *ActiproSoftwareLLC.562882FEEB491* | Remove-AppxPackage
 Get-AppxPackage -allusers *46928bounde.EclipseManager* | Remove-AppxPackage
-Get-AppxPackage -allusers *PandoraMediaInc.29680B314EFC2* | Remove-AppxPackage
 Get-AppxPackage -allusers *AdobeSystemIncorporated. AdobePhotoshop* | Remove-AppxPackage
 Get-AppxPackage -allusers *D5EA27B7.Duolingo- LearnLanguagesforFree* | Remove-AppxPackage
 Get-AppxPackage -allusers *AMicrosoft.NetworkSpeedTest* | Remove-AppxPackage
@@ -186,23 +185,20 @@ Get-AppxPackage -allusers *FarmVille2CountryEscape* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.GetHelp* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.Getstarted* | Remove-AppxPackage
 Get-AppxPackage -allusers *Todos* | Remove-AppxPackage
-
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-
-
-
-
+Get-AppxPackage -allusers *ConnectivityStore* | Remove-AppxPackage
+Get-AppxPackage -allusers *MinecraftUWP* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.BingFinance* | Remove-AppxPackage
+Get-AppxPackage -allusers *Netflix* | Remove-AppxPackage
+Get-AppxPackage -allusers *CommsPhone* | Remove-AppxPackage
+Get-AppxPackage -allusers *windowsphone* | Remove-AppxPackage
+Get-AppxPackage -allusers *WindowsScan* | Remove-AppxPackage
+Get-AppxPackage -allusers *AutodeskSketchBook* | Remove-AppxPackage
+Get-AppxPackage -allusers *bingsports* | Remove-AppxPackage
+Get-AppxPackage -allusers *Fitbit.FitbitCoach* | Remove-AppxPackage
+Get-AppxPackage -allusers *ThumbmunkeysLtd.PhototasticCollage* | Remove-AppxPackage
+Get-AppxPackage -allusers *LinkedInforWindows* | Remove-AppxPackage
+Get-AppxPackage -allusers *XboxOneSmartGlass* | Remove-AppxPackage
+Get-AppxPackage -allusers *Microsoft.Xbox* | Remove-AppxPackage
 
 ## Disable Services
 Set-Service dmwappushservice -StartupType Disabled
