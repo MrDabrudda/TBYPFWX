@@ -170,7 +170,6 @@ Get-AppxPackage -allusers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage
 Get-AppxPackage -allusers *Windows.CBSPreview* | Remove-AppxPackage
-
 Get-AppxPackage -allusers *SpotifyAB.SpotifyMusic* | Remove-AppxPackage
 Get-AppxPackage -allusers *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.WindowsAlarms* | Remove-AppxPackage
