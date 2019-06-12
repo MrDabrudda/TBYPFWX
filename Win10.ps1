@@ -279,19 +279,35 @@ Set-Service PolicyAgent -StartupType Manual
 Set-Service KtmRm -StartupType Manual
 Set-Service LxpSvc -StartupType Disabled
 Set-Service lltdsvc -StartupType Disabled
-
-
-
-
 Set-Service wlpasvc -StartupType Manual
+Set-Service diagnosticshub.standardcollector.service -StartupType Disabled
+Set-Service wlidsvc -StartupType Disabled
 Set-Service AppVClient -StartupType Disabled
 Set-Service MSiSCSI -StartupType Disabled
+Set-Service swprv -StartupType Manual
+Set-Service smphost -StartupType Manual
+Set-Service InstallService -StartupType Manual
 Set-Service SmsRouter -StartupType Disabled
 Set-Service NaturalAuthentication -StartupType Disabled
 Set-Service NetTcpPortSharing -StartupType Disabled
 Set-Service Netlogon -StartupType Disabled
+Set-Service NcbService -StartupType Disabled
+Set-Service Netman -StartupType Manual
+Set-Service NcaSvc -StartupType Manual
+Set-Service netprofm -StartupType Manual
+Set-Service NlaSvc -StartupType Manual
+Set-Service NetSetupSvc -StartupType Manual
+Set-Service nsi -StartupType Automatic
+Set-Service NVDisplay.ContainerLocalSystem -StartupType Disabled
 Set-Service NcdAutoSetup -StartupType Disabled
 Set-Service CscService -StartupType Disabled
+Set-Service ssh-agent -StartupType Disabled
+Set-Service defragsvc -StartupType Manual
+Set-Service WpcMonSvc -StartupType Disabled
+
+
+
+
 Set-Service SEMgrSvc -StartupType Disabled
 Set-Service PhoneSvc -StartupType Disabled
 Set-Service SessionEnv -StartupType Disabled
