@@ -200,7 +200,7 @@ Get-AppxPackage -allusers *XboxOneSmartGlass* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.Xbox* | Remove-AppxPackage
 
 ## Disable Services
-##Set-Service ServiceName -StartupType 4 (Disabled)|3 (Manual)|Automatic|2(Automatic Delayed)|1 (Automatic)
+##Set-Service ServiceName -StartupType 4 (Disabled)|3 (Manual)|2(Automatic Delayed)|Automatic
 Set-Service AxInstSV -StartupType Disabled
 Set-Service  -StartupType Disabled
 Set-Service  -StartupType Disabled
@@ -217,7 +217,7 @@ Set-Service tzautoupdate -StartupType Disabled
 Set-Service BthAvctpSvc -StartupType Disabled
 
 
-Set-Service BITS -StartupType Automatic (Delayed Start)
+Set-Service BITS -StartupType 2
 Set-Service BthHFSrv -StartupType Disabled
 Set-Service bthserv -StartupType Disabled
 Set-Service PeerDistSvc -StartupType Disabled
