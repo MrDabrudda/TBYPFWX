@@ -233,13 +233,33 @@ Set-Service CryptSvc -StartupType Automatic
 Set-Service DsSvc -StartupType Manual
 Set-Service DusmSvc -StartupType Automatic
 Set-Service DoSvc -StartupType 2
-
-
+Set-Service DeviceAssociationService -StartupType Manual
+Set-Service DeviceInstall -StartupType Manual
+Set-Service DmEnrollmentSvc -StartupType Manual
+Set-Service DsmSvc -StartupType Manual
+Set-Service DevQueryBroker -StartupType Manual
+Set-Service Dhcp -StartupType Automatic
+Set-Service diagsvc -StartupType Disabled
+Set-Service DPS -StartupType Disabled
+Set-Service WdiServiceHost -StartupType Disabled
+Set-Service WdiSystemHost -StartupType Disabled
+Set-Service TrkWks -StartupType Disabled
+Set-Service MSDTC -StartupType Disabled
+Set-Service dmwappushservice -StartupType Disabled
+Set-Service Dnscache -StartupType Automatic
 Set-Service NfsClnt -StartupType Disabled
 Set-Service dmwappushsvc -StartupType Disabled
 Set-Service MapsBroker -StartupType Disabled
+Set-Service EFS -StartupType Manual
+Set-Service Eaphost -StartupType Manual
+Set-Service fhsvc -StartupType Manual
+Set-Service "FlexNet Licensing Service 64" -StartupType Disabled
+Set-Service fdPHost -StartupType Disabled
+Set-Service FDResPub -StartupType Disabled
 Set-Service Fax -StartupType Disabled
 Set-Service lfsvc -StartupType Disabled
+Set-Service GraphicsPerfSvc -StartupType Manual
+Set-Service hidserv -StartupType Manual
 Set-Service HvHost -StartupType Disabled
 Set-Service vmickvpexchange -StartupType Disabled
 Set-Service vmicguestinterface -StartupType Disabled
@@ -250,10 +270,19 @@ Set-Service vmicrdv -StartupType Disabled
 Set-Service vmictimesync -StartupType Disabled
 Set-Service vmms -StartupType Disabled
 Set-Service vmicvss -StartupType Disabled
+Set-Service IKEEXT -StartupType Manual
 Set-Service irmon -StartupType Disabled
 Set-Service SharedAccess -StartupType Disabled
 Set-Service iphlpsvc -StartupType Disabled
 Set-Service IpxlatCfgSvc -StartupType Disabled
+Set-Service PolicyAgent -StartupType Manual
+Set-Service KtmRm -StartupType Manual
+Set-Service LxpSvc -StartupType Disabled
+Set-Service lltdsvc -StartupType Disabled
+
+
+
+
 Set-Service wlpasvc -StartupType Manual
 Set-Service AppVClient -StartupType Disabled
 Set-Service MSiSCSI -StartupType Disabled
