@@ -215,13 +215,26 @@ Set-Service AppXSvc -StartupType Manual
 Set-Service AssignedAccessManagerSvc -StartupType Disabled
 Set-Service tzautoupdate -StartupType Disabled
 Set-Service BthAvctpSvc -StartupType Disabled
-
-
 Set-Service BITS -StartupType 2
-Set-Service BthHFSrv -StartupType Disabled
+Set-Service BDESVC -StartupType Manual
+Set-Service wbengine -StartupType Manual
+Set-Service BTAGService -StartupType Disabled
 Set-Service bthserv -StartupType Disabled
+Set-Service BthHFSrv -StartupType Disabled
 Set-Service PeerDistSvc -StartupType Disabled
+Set-Service camsvc -StartupType Disabled
 Set-Service CertPropSvc -StartupType Disabled
+Set-Service KeyIso -StartupType Manual
+Set-Service EventSystem -StartupType Automatic
+Set-Service COMSysApp -StartupType Manual
+Set-Service CDPSvc -StartupType 2
+Set-Service VaultSvc -StartupType Manual
+Set-Service CryptSvc -StartupType Automatic
+Set-Service DsSvc -StartupType Manual
+Set-Service DusmSvc -StartupType Automatic
+Set-Service DoSvc -StartupType 2
+
+
 Set-Service NfsClnt -StartupType Disabled
 Set-Service dmwappushsvc -StartupType Disabled
 Set-Service MapsBroker -StartupType Disabled
