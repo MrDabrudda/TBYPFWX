@@ -353,7 +353,7 @@ Set-Service SysMain -StartupType Automatic
 Set-Service SENS -StartupType Automatic
 Set-Service SgrmBroker -StartupType 2
 Set-Service Schedule -StartupType Automatic
-Set-Service lmhosts -StartupType Disabled
+Set-Service lmhosts -StartupType Manual
 Set-Service TapiSrv -StartupType Manual
 Set-Service Themes -StartupType Automatic
 Set-Service TabletInputService -StartupType Disabled
