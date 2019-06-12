@@ -202,8 +202,6 @@ Get-AppxPackage -allusers *Microsoft.Xbox* | Remove-AppxPackage
 ## Disable Services
 ##Set-Service ServiceName -StartupType 4 (Disabled)|3 (Manual)|2(Automatic Delayed)|Automatic
 Set-Service AxInstSV -StartupType Disabled
-Set-Service  -StartupType Disabled
-Set-Service  -StartupType Disabled
 Set-Service dmwappushservice -StartupType Disabled
 Set-Service AJRouter -StartupType Disabled
 Set-Service AppReadiness -StartupType Manual
