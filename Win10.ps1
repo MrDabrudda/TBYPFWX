@@ -372,21 +372,43 @@ Set-Service TokenBroker -StartupType Disabled
 Set-Service WebClient -StartupType Disabled
 Set-Service WFDSConMgrSvc -StartupType Disabled
 Set-Service Audiosrv -StartupType Automatic
-
-
-
+Set-Service AudioEndpointBuilder -StartupType Automatic
+Set-Service SDRSVC -StartupType Manual
+Set-Service WbioSrvc -StartupType Disabled
 Set-Service WFDSConSvc -StartupType Disabled
 Set-Service FrameServer -StartupType Disabled
 Set-Service wcncsvc -StartupType Disabled
+Set-Service Wcmsvc -StartupType Automatic
+Set-Service mpssvc -StartupType Automatic
+Set-Service WEPHOSTSVC -StartupType Manual
+Set-Service WerSvc -StartupType Disabled
+Set-Service Wecsvc -StartupType Manual
+Set-Service EventLog -StartupType Automatic
+Set-Service FontCache -StartupType Automatic
+Set-Service stisvc -StartupType Manual
 Set-Service wisvc -StartupType Disabled
+Set-Service msiserver -StartupType Manual
+Set-Service LicenseManager -StartupType Manual
+Set-Service Winmgmt -StartupType Automatic
 Set-Service WMPNetworkSvc -StartupType Disabled
 Set-Service icssvc -StartupType Disabled
+Set-Service TrustedInstaller -StartupType Manual
+Set-Service spectrum -StartupType Disabled
+Set-Service FontCache3.0.0.0 -StartupType Manual
+Set-Service WpnService -StartupType Disabled
+Set-Service PushToInstall -StartupType Manual
 Set-Service WinRM -StartupType Disabled
 Set-Service WSearch -StartupType Disabled
+Set-Service W32Time -StartupType Automatic
+Set-Service wuauserv -StartupType Manual
+Set-Service WaaSMedicSvc -StartupType Manual
+Set-Service dot3svc -StartupType Manual
+Set-Service WlanSvc -StartupType Manual
+Set-Service wmiApSrv -StartupType Disabled
+Set-Service LanmanWorkstation -StartupType Automatic
 Set-Service workfolderssvc -StartupType Disabled
 Set-Service WwanSvc -StartupType Disabled
 Set-Service XboxGipSvc -StartupType Disabled
-Set-Service xbgm -StartupType Disabled
 Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
