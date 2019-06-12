@@ -334,23 +334,47 @@ Set-Service seclogon -StartupType Disabled
 Set-Service SstpSvc -StartupType Manual
 Set-Service SamSs -StartupType Automatic
 Set-Service wscsvc -StartupType 2
-
-
-
-
 Set-Service SensorDataService -StartupType Disabled
 Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
+Set-Service LanmanServer -StartupType Automatic
 Set-Service shpamsvc -StartupType Disabled
+Set-Service ShellHWDetection -StartupType Automatic
 Set-Service SCardSvr -StartupType Disabled
 Set-Service ScDeviceEnum -StartupType Disabled
 Set-Service SCPolicySvc -StartupType Disabled
 Set-Service SNMP -StartupType Disabled
 Set-Service SNMPTRAP -StartupType Disabled
+Set-Service SharedRealitySvc -StartupType Disabled
+Set-Service svsvc -StartupType Manual
 Set-Service SSDPSRV -StartupType Disabled
-Set-Service TabletInputService -StartupType Manual
+Set-Service WiaRpc -StartupType Disabled
+Set-Service StorSvc -StartupType Manual
+Set-Service TieringEngineService -StartupType Manual
+Set-Service SysMain -StartupType Automatic
+Set-Service SENS -StartupType Automatic
+Set-Service SgrmBroker -StartupType 2
+Set-Service Schedule -StartupType Automatic
+Set-Service lmhosts -StartupType Disabled
+Set-Service TapiSrv -StartupType Manual
+Set-Service Themes -StartupType Automatic
+Set-Service TabletInputService -StartupType Disabled
+Set-Service upnphost -StartupType Disabled
 Set-Service UevAgentService -StartupType Disabled
+Set-Service UserManager -StartupType Automatic
+Set-Service ProfSvc -StartupType Automatic
+Set-Service vds -StartupType Manual
+Set-Service VSS -StartupType Manual
+Set-Service VacSvc -StartupType Disabled
+Set-Service WalletService -StartupType Disabled
+Set-Service WarpJITSvc -StartupType Disabled
+Set-Service TokenBroker -StartupType Disabled
 Set-Service WebClient -StartupType Disabled
+Set-Service WFDSConMgrSvc -StartupType Disabled
+Set-Service Audiosrv -StartupType Automatic
+
+
+
 Set-Service WFDSConSvc -StartupType Disabled
 Set-Service FrameServer -StartupType Disabled
 Set-Service wcncsvc -StartupType Disabled
