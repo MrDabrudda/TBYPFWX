@@ -304,12 +304,25 @@ Set-Service CscService -StartupType Disabled
 Set-Service ssh-agent -StartupType Disabled
 Set-Service defragsvc -StartupType Manual
 Set-Service WpcMonSvc -StartupType Disabled
-
-
-
-
 Set-Service SEMgrSvc -StartupType Disabled
+Set-Service PNRPsvc -StartupType Disabled
+Set-Service p2psvc -StartupType Disabled
+Set-Service p2pimsvc -StartupType Disabled
+Set-Service PerfHost -StartupType Disabled
+Set-Service pla -StartupType Manual
 Set-Service PhoneSvc -StartupType Disabled
+Set-Service PlugPlay -StartupType Manual
+Set-Service PNRPAutoReg -StartupType Disabled
+Set-Service WPDBusEnum -StartupType Disabled
+Set-Service Power -StartupType Automatic
+Set-Service Spooler -StartupType Automatic
+Set-Service PrintNotify -StartupType Manual
+Set-Service wercplsupport -StartupType Manual
+Set-Service PcaSvc -StartupType Manual
+Set-Service QWAVE -StartupType Disabled
+Set-Service RmSvc -StartupType Manual
+Set-Service RasAuto -StartupType Manual
+Set-Service RasMan -StartupType Automatic
 Set-Service SessionEnv -StartupType Disabled
 Set-Service TermService -StartupType Disabled
 Set-Service UmRdpService -StartupType Disabled
@@ -317,6 +330,14 @@ Set-Service RpcLocator -StartupType Disabled
 Set-Service RemoteRegistry -StartupType Disabled
 Set-Service RetailDemo -StartupType Disabled
 Set-Service RemoteAccess -StartupType Disabled
+Set-Service seclogon -StartupType Disabled
+Set-Service SstpSvc -StartupType Manual
+Set-Service SamSs -StartupType Automatic
+Set-Service wscsvc -StartupType 2
+
+
+
+
 Set-Service SensorDataService -StartupType Disabled
 Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
