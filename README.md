@@ -1,9 +1,7 @@
 # TBYPFWX
 *****STILL A WORK IN PROGRESS*****  NOT UPDATED YET.  WHEN THIS HEADER IS REMOVED THEN THIS VERSION IS FINAL
 
-13JUNE2019
-Windows 10 1903 update
-Updating various privacy setting. Updating various service run-levels..disalbe useless M$ services not needed for a gaming machine.
+13JUNE2019 - Windows 10 1903 update - Updating various privacy setting. Updating various service run-levels..disalbe useless M$ services not needed for a gaming machine.
 
 
 Take Back Your Privacy From Windows 10
