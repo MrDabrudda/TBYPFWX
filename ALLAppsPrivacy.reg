@@ -337,4 +337,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
 "HttpAcceptLanguageOptOut"=dword:00000001
 
-
+;Disable "Let Windows track app launches  to improve Start and search results"
+;Must be run for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
