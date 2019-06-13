@@ -220,7 +220,7 @@ Set-Service BTAGService -StartupType Disabled
 Set-Service bthserv -StartupType Disabled
 Set-Service BthHFSrv -StartupType Disabled
 Set-Service PeerDistSvc -StartupType Disabled
-Set-Service camsvc -StartupType Disabled
+Set-Service camsvc -StartupType Manual
 Set-Service CertPropSvc -StartupType Disabled
 Set-Service KeyIso -StartupType Manual
 Set-Service EventSystem -StartupType Automatic
