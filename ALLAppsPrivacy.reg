@@ -331,3 +331,10 @@ Windows Registry Editor Version 5.00
 ;Disable advanced indexing options
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "PreventUsingAdvancedIndexingOptions"=dword:00000001
+
+;Disable "Let websites provide locally relevant content by accessing my langueage list"
+;Must be run for each user to disable this setting
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+
