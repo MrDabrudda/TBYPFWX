@@ -335,7 +335,8 @@ Set-Service wscsvc -StartupType 2
 Set-Service SensorDataService -StartupType Disabled
 Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
-Set-Service LanmanServer -StartupType Automatic
+##Set LanmanServer service to Automatic if you are hosting files from your computer, otherwise not needed on a gaming computer
+Set-Service LanmanServer -StartupType Disabled
 Set-Service shpamsvc -StartupType Disabled
 Set-Service ShellHWDetection -StartupType Automatic
 Set-Service SCardSvr -StartupType Disabled
