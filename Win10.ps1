@@ -289,7 +289,7 @@ Set-Service SmsRouter -StartupType Disabled
 Set-Service NaturalAuthentication -StartupType Disabled
 Set-Service NetTcpPortSharing -StartupType Disabled
 Set-Service Netlogon -StartupType Disabled
-Set-Service NcbService -StartupType Disabled
+Set-Service NcbService -StartupType Manual
 Set-Service Netman -StartupType Manual
 Set-Service NcaSvc -StartupType Manual
 Set-Service netprofm -StartupType Manual
@@ -308,7 +308,7 @@ Set-Service p2psvc -StartupType Disabled
 Set-Service p2pimsvc -StartupType Disabled
 Set-Service PerfHost -StartupType Disabled
 Set-Service pla -StartupType Manual
-Set-Service PhoneSvc -StartupType Disabled
+Set-Service PhoneSvc -StartupType Manual
 Set-Service PlugPlay -StartupType Manual
 Set-Service PNRPAutoReg -StartupType Disabled
 Set-Service WPDBusEnum -StartupType Disabled
