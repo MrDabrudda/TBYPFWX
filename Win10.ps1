@@ -208,7 +208,7 @@ Set-Service AppReadiness -StartupType Manual
 Set-Service AppIDSvc -StartupType Manual
 Set-Service Appinfo -StartupType Manual
 Set-Service ALG -StartupType Disabled
-Set-Service AppMgmt -StartupType Disabled
+Set-Service AppMgmt -StartupType Manual
 Set-Service AppXSvc -StartupType Manual
 Set-Service AssignedAccessManagerSvc -StartupType Disabled
 Set-Service tzautoupdate -StartupType Disabled
@@ -335,8 +335,7 @@ Set-Service wscsvc -StartupType 2
 Set-Service SensorDataService -StartupType Disabled
 Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
-##Set LanmanServer service to Automatic if you are hosting files from your computer, otherwise not needed on a gaming computer
-Set-Service LanmanServer -StartupType Disabled
+Set-Service LanmanServer -StartupType Manual
 Set-Service shpamsvc -StartupType Disabled
 Set-Service ShellHWDetection -StartupType Automatic
 Set-Service SCardSvr -StartupType Disabled
