@@ -504,8 +504,13 @@ Windows Registry Editor Version 5.00
 "Enabled"=dword:00000000
 
 ;Disable syncing Advanced settings if using Micro$oft account
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
 "Enabled"=dword:00000000
 
+;Disable Cortana
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Windows Search]
+"CortanaConsent"=dword:00000000
 
 
