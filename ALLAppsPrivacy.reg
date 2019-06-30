@@ -407,3 +407,7 @@ Windows Registry Editor Version 5.00
 ;Disable apps access to contacts
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
 "Value"="Deny"
+
+;Disable apps access to calendar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
+"Value"="Deny"
