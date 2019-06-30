@@ -569,3 +569,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
 "DontReportInfectionInformation"=dword:00000001
 
+;Disable Lock Screen Spotlight pictures, fun facts, tips, tricks, etc
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"RotatingLockScreenEnabled"=dword:00000000
+"RotatingLockScreenOverlayEnabled"=dword:00000000
+
