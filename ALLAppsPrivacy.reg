@@ -411,3 +411,9 @@ Windows Registry Editor Version 5.00
 ;Disable apps access to calendar
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
 "Value"="Deny"
+
+;Disable apps access to call history
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
+"Value"="Deny"
+
+
