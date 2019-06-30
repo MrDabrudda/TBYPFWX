@@ -516,3 +516,13 @@ Windows Registry Editor Version 5.00
 ;Disable downloading speech recognition synthesis models
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
 "ModelDownloadAllowed"=dword:00000000
+
+;Disable Location tracking 1
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocation"=dword:00000001
+;Disable Location tracking 2
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableWindowsLocationProvider"=dword:00000001
+
+
+
