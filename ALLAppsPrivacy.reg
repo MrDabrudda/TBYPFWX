@@ -367,3 +367,7 @@ Windows Registry Editor Version 5.00
 ;Disable advertisements pushed via Bluetooth
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Bluetooth]
 "AllowAdvertising"=dword:00000000
+
+;Disable backing up text messages to the cloud
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Messaging]
+"AllowMessageSync"=dword:00000000
