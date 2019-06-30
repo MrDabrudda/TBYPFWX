@@ -380,3 +380,7 @@ Windows Registry Editor Version 5.00
 ;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
 "ToastEnabled"=dword:00000000
+
+;Disable URLs sent from apps to Micro$oft store
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AppHost]
+"EnableWebContentEvaluation"=dword:00000000
