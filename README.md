@@ -1,7 +1,7 @@
 # TBYPFWX
 *****STILL A WORK IN PROGRESS*****  NOT UPDATED YET.  WHEN THIS HEADER IS REMOVED THEN THIS VERSION IS FINAL
 
-30JUNE2019 - Added addition privacy settings.  Created a UserRegSetting.reg which sets the privacy settings correctly for each users.  This reg patch will need to be ran on every user's profile.  I plan to add it to the and Default Profiles so new users will get the correct privacy settings.
+30JUNE2019 - Added addition privacy settings.  Created a UserRegSetting.reg which sets the privacy settings correctly for each user.  This reg patch will need to be ran on every user's profile.  I plan to add it to the and Default Profiles so new users will get the correct privacy settings.
 
 13JUNE2019 - Windows 10 1903 Release - Updating various privacy setting. Updating various service run-levels to disable useless M$ services not needed for a gaming machine.
 
