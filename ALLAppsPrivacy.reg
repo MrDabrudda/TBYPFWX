@@ -482,16 +482,23 @@ Windows Registry Editor Version 5.00
 "OptimizeWindowsSearchResultsForScreenReaders"=dword:00000000
 
 ;Disable syncing settings across devices if using Micro$oft account
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync]
 "SyncPolicy"=dword:00000005
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
 "Enabled"=dword:00000000
+
 ;Disable syncing browser settings if using Micro$oft account
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
 "Enabled"=dword:00000000
 
-;Disable syncing passwords
+;Disable syncing passwords if using Micro$oft account
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
 "Enabled"=dword:00000000
 
-
+;Disable syncing Accessibility settings if using Micro$oft account
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000000
