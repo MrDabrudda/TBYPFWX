@@ -371,3 +371,7 @@ Windows Registry Editor Version 5.00
 ;Disable backing up text messages to the cloud
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Messaging]
 "AllowMessageSync"=dword:00000000
+
+;Disable Biometric features
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+"Enabled"=dword:00000000
