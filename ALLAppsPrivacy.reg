@@ -359,7 +359,11 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SilentInstalledAppsEnabled"=dword:00000000
 
-;Disables Microsoft from changing settings on YOUR computer to experiment 
-;and participate in Micro$oft's test program without your knowledge or consent
+;Disables Microsoft from changing settings on YOUR computer remotely to experiment 
+;and prevent participation in Micro$oft's test program without your knowledge or consent
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System]
 "AllowExperimentation"=dword:00000000
+
+;Disable advertisements pushed via Bluetooth
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Bluetooth]
+"AllowAdvertising"=dword:00000000
