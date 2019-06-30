@@ -20,6 +20,9 @@ sc config seclogon start= disabled
 sc stop seclogon
 
 rem disable DiagTrack and other useless services
+sc config "Diagnostics Tracking Service" start= disabled
+sc stop "Diagnostics Tracking Service"
+sc delete "Diagnostics Tracking Service"
 sc config dmwappushsvc start= disabled
 sc stop dmwappushsvc
 sc delete dmwappushsvc
