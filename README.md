@@ -1,4 +1,7 @@
 # TBYPFWX
+
+***BACKUP YOUR COMPUTER...MAKE A RESTORE POINT***
+
 *****STILL A WORK IN PROGRESS*****  NOT UPDATED YET.  WHEN THIS HEADER IS REMOVED THEN THIS VERSION IS FINAL
 
 30JUNE2019 - Added addition privacy settings.  Created a UserRegSetting.reg which sets the privacy settings correctly for each user.  This reg patch will need to be ran on every user's profile.  I plan to add it to the and Default Profiles so new users will get the correct privacy settings.
