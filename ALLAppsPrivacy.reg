@@ -469,3 +469,26 @@ Windows Registry Editor Version 5.00
 ;Disables address bar auto completion
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Browser]
 "AllowAddressBarDropdown"=dword:00000000
+
+;Disable Form suggestions
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"Use FormSuggest"="no"
+
+;Disable optimized web search results from taskbar
+;If you need the visually impaired features then enable this option dword:00000001
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"OptimizeWindowsSearchResultsForScreenReaders"=dword:00000000
+
+;Disable syncing settings across devices if using Micro$oft account
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync]
+"SyncPolicy"=dword:00000005
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000000
+;Disable syncing browser settings if using Micro$oft account
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000000
+
+
+
