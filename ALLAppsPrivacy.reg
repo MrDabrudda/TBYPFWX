@@ -513,4 +513,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Windows Search]
 "CortanaConsent"=dword:00000000
 
-
+;Disable downloading speech recognition synthesis models
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"ModelDownloadAllowed"=dword:00000000
