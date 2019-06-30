@@ -517,12 +517,15 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
 "ModelDownloadAllowed"=dword:00000000
 
-;Disable Location tracking 1
+;Disable Location tracking services
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
 "DisableLocation"=dword:00000001
-;Disable Location tracking 2
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
 "DisableWindowsLocationProvider"=dword:00000001
+"DisableLocationScripting"=dword:00000001
+;Disables GPS and gyrosctopes.  If tablet rotate screen stops working change to dword:00000000
+"DisableSensors"=dword:00000001
 
-
+;Disable apps access to locations
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"Value"="Deny"
 
