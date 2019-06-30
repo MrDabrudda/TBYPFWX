@@ -551,3 +551,16 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SystemPaneSuggestionsEnabled"=dword:00000000
 
+;Disable ads in explorer/OneDrive
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+;Disable OneDrive access to network before logged in
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+
+
+
+
+
