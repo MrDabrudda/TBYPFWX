@@ -576,17 +576,28 @@ Windows Registry Editor Version 5.00
 "RotatingLockScreenOverlayEnabled"=dword:00000000
 
 ;Disable notifications on lock screen
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings]
 "NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
 
 ;Disable Feedback
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Siuf\Rules]
 "NumberOfSIUFInPeriod"=dword:00000000
 "PeriodInNanoSeconds"=dword:00000000
 
 ;Disable apps searching Bing
+;Must be ran for each user to disable this setting
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
 "BingSearchEnabled"=dword:00000000
+
+;Disable tips, tricks and suggestions while using Windows
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SoftLandingEnabled"=dword:00000000
+
+
+
 
 
 
