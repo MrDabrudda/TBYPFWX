@@ -560,7 +560,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
 "PreventNetworkTrafficPreUserSignIn"=dword:00000001
 
+;Disable Defender Spynet file submissions
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SpyNetReporting"=dword:00000000
+"SubmitSamplesConsent"=dword:00000002
 
-
-
+;Disables submitting infection details to Micro$oft
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontReportInfectionInformation"=dword:00000001
 
