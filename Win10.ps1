@@ -295,7 +295,6 @@ Set-Service netprofm -StartupType Manual
 Set-Service NlaSvc -StartupType Manual
 Set-Service NetSetupSvc -StartupType Manual
 Set-Service nsi -StartupType Automatic
-Set-Service NVDisplay.ContainerLocalSystem -StartupType Disabled
 Set-Service NcdAutoSetup -StartupType Disabled
 Set-Service CscService -StartupType Disabled
 Set-Service ssh-agent -StartupType Disabled
