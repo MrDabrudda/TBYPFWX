@@ -251,7 +251,6 @@ Set-Service MapsBroker -StartupType Disabled
 Set-Service EFS -StartupType Manual
 Set-Service Eaphost -StartupType Manual
 Set-Service fhsvc -StartupType Manual
-Set-Service "FlexNet Licensing Service 64" -StartupType Disabled
 Set-Service fdPHost -StartupType Disabled
 Set-Service FDResPub -StartupType Disabled
 Set-Service Fax -StartupType Disabled
