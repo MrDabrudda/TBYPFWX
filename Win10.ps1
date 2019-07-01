@@ -329,7 +329,6 @@ Set-Service RemoteAccess -StartupType Disabled
 Set-Service seclogon -StartupType Disabled
 Set-Service SstpSvc -StartupType Manual
 Set-Service SamSs -StartupType Automatic
-Set-Service wscsvc -StartupType 2
 Set-Service SensorDataService -StartupType Disabled
 Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
