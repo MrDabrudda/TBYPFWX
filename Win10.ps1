@@ -387,7 +387,6 @@ Set-Service icssvc -StartupType Disabled
 Set-Service TrustedInstaller -StartupType Manual
 Set-Service spectrum -StartupType Disabled
 Set-Service perceptionssimulation -StartupType Disabled
-
 Set-Service FontCache3.0.0.0 -StartupType Manual
 Set-Service WpnService -StartupType Disabled
 Set-Service PushToInstall -StartupType Manual
@@ -397,7 +396,8 @@ Set-Service W32Time -StartupType Automatic
 Set-Service wuauserv -StartupType Manual
 Set-Service WaaSMedicSvc -StartupType Manual
 Set-Service dot3svc -StartupType Manual
-Set-Service WlanSvc -StartupType Manual
+Set-Service WlanSvc -StartupType Automatic
+
 Set-Service wmiApSrv -StartupType Disabled
 Set-Service LanmanWorkstation -StartupType Automatic
 Set-Service workfolderssvc -StartupType Disabled
