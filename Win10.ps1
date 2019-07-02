@@ -371,7 +371,7 @@ Set-Service SDRSVC -StartupType Manual
 Set-Service WbioSrvc -StartupType Disabled
 Set-Service WFDSConSvc -StartupType Disabled
 Set-Service FrameServer -StartupType Disabled
-Set-Service wcncsvc -StartupType Disabled
+Set-Service wcncsvc -StartupType Automatic
 Set-Service Wcmsvc -StartupType Automatic
 Set-Service mpssvc -StartupType Automatic
 Set-Service WEPHOSTSVC -StartupType Manual
