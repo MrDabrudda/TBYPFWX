@@ -397,7 +397,6 @@ Set-Service wuauserv -StartupType Manual
 Set-Service WaaSMedicSvc -StartupType Manual
 Set-Service dot3svc -StartupType Manual
 Set-Service WlanSvc -StartupType Automatic
-
 Set-Service wmiApSrv -StartupType Disabled
 Set-Service LanmanWorkstation -StartupType Automatic
 Set-Service workfolderssvc -StartupType Disabled
