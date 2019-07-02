@@ -380,13 +380,14 @@ Set-Service EventLog -StartupType Automatic
 Set-Service FontCache -StartupType Automatic
 Set-Service stisvc -StartupType Manual
 Set-Service wisvc -StartupType Disabled
-Set-Service msiserver -StartupType Manual
 Set-Service LicenseManager -StartupType Manual
 Set-Service Winmgmt -StartupType Automatic
 Set-Service WMPNetworkSvc -StartupType Disabled
 Set-Service icssvc -StartupType Disabled
 Set-Service TrustedInstaller -StartupType Manual
 Set-Service spectrum -StartupType Disabled
+Set-Service perceptionssimulation -StartupType Disabled
+
 Set-Service FontCache3.0.0.0 -StartupType Manual
 Set-Service WpnService -StartupType Disabled
 Set-Service PushToInstall -StartupType Manual
