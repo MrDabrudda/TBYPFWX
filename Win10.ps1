@@ -373,7 +373,6 @@ Set-Service WFDSConSvc -StartupType Disabled
 Set-Service FrameServer -StartupType Disabled
 Set-Service wcncsvc -StartupType Automatic
 Set-Service Wcmsvc -StartupType Automatic
-Set-Service mpssvc -StartupType Automatic
 Set-Service WEPHOSTSVC -StartupType Manual
 Set-Service WerSvc -StartupType Disabled
 Set-Service Wecsvc -StartupType Manual
