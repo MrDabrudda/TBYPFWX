@@ -362,7 +362,7 @@ Set-Service VSS -StartupType Manual
 Set-Service VacSvc -StartupType Disabled
 Set-Service WalletService -StartupType Disabled
 Set-Service WarpJITSvc -StartupType Disabled
-Set-Service TokenBroker -StartupType Disabled
+Set-Service TokenBroker -StartupType Manual
 Set-Service WebClient -StartupType Disabled
 Set-Service WFDSConMgrSvc -StartupType Disabled
 Set-Service Audiosrv -StartupType Automatic
@@ -388,7 +388,7 @@ Set-Service TrustedInstaller -StartupType Manual
 Set-Service spectrum -StartupType Disabled
 Set-Service perceptionssimulation -StartupType Disabled
 Set-Service FontCache3.0.0.0 -StartupType Manual
-Set-Service WpnService -StartupType Disabled
+Set-Service WpnService -StartupType Manual
 Set-Service PushToInstall -StartupType Manual
 Set-Service WinRM -StartupType Disabled
 Set-Service WSearch -StartupType Disabled
