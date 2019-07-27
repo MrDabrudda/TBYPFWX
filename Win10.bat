@@ -11,7 +11,7 @@ DISM /online /disable-feature /featurename:TelnetClient
 DISM /online /disable-feature /featurename:TFTP
 
 rem V-70639
-rem if this is enabled it will disable access to UNC shares
+rem if this is enabled it will disable access to UNC shares (ie. \\192.168.1.2\files)
 rem DISM /online /disable-feature /featurename:SMB1Protocol
 rem DISM /online /disable-feature /featurename:SMB1Protocol-Client
 DISM /online /disable-feature /featurename:SMB1Protocol-Server
