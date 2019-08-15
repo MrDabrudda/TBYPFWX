@@ -1,5 +1,13 @@
 ##Run Powershell ISE as an admin and run the following command
 ##set-executionpolicy unrestricted
+
+#Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
+#c:\windows\system32\bcdedit.exe /set {current} nx OptOut
+
+
+
+
+
 ##How to list apps
 ##Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName or Get-ProvisionedAppXPackage -Online|Select DisplayName
 
