@@ -23,21 +23,13 @@ Windows 10 DISA STIG Setting for Windows 10 V1R14 STIG from 20 JULY 2018
 
 1)  Import the Win10_LocalSec.inf into the Local Security Policy MMC. (Windows 10 Home does not have a Local Security Snap-In)
 
-2)  Import the STIG.reg file, which is the DISA/NIST/NSA recommended setting, by right clicking the file and select MERGE from the menu to import the registry patch.
-
-3) Run the Win10.bat to disable features and services specified in the DISA STIGs
-
-4) Run the Windows PowerShell ISE as an administrator by right clicking the Windows Powershell ISE in the Start Menu and selecting "Run As Administrator" from the menu.
+2) Run the Windows PowerShell ISE as an administrator by right clicking the Windows Powershell ISE in the Start Menu and selecting "Run As Administrator" from the menu.
 Run the following command in the PowerShell ISE to allow unsigned ps1 files to run: set-executionpolicy unrestricted
 
-5) Load and Run the Win10.ps1 in the Powershell ISE to uninstall the crap apps Microsoft installs
+3) Load and Run the Win10.ps1 in the Powershell ISE to uninstall the crap apps Microsoft installs
 
-6) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
+4) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
 
-7) Reboot
+5) Reboot
 
-8) You can download the latest DISA STIG Viewer 2.7.1 and select "Open Checklist from File" from the top menu and open the Windows10.ckl to view which vulnerabilities are CLOSED, OPEN, or NA
-
-Most CAT1 & CAT3 vulnerabilities are CLOSED. See the Windows10.ckl in the STIG Viewer to see if any NA or OPEN vulerabilites pertain to you.  I did not enable auditing or BitLocker because those features would kill a system's performance.
-
-Still a work in progress with more privacy setting to come...
+6) You can download the latest DISA STIG Viewer and select "Open Checklist from File" from the top menu and open the Windows10-STIGv1_18.ckl to view which vulnerabilities are CLOSED by this project.
