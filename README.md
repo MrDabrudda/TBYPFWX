@@ -26,7 +26,7 @@ Windows 10 DISA STIG Setting for Windows 10 V1R14 STIG from 20 JULY 2018
 
 ***Backup your computer!!!  Use a backup software such as Acronis, Norton Ghost or I highly recommend Clonezilla.  Also take a Restore Point snapshot using System Restore.  I assume you know exactly what you are doing and I am not responsible for your computer getting borked up.  Use at your own risk.***
 
-1)  Import the Win10_LocalSec.inf into the Local Security Policy MMC. (Windows 10 Home does not have a Local Security Snap-In)
+1)  Import the Windows10LocalSecurityPolicy.inf into the Local Security Policy MMC. (Windows 10 Home does not have a Local Security Snap-In)
 
 2) Run the Windows PowerShell ISE as an administrator by right clicking the Windows Powershell ISE in the Start Menu and selecting "Run As Administrator" from the menu.
 Run the following command in the PowerShell ISE to allow unsigned ps1 files to run: set-executionpolicy unrestricted
