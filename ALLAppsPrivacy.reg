@@ -1,0 +1,614 @@
+Windows Registry Editor Version 5.00
+
+;App Privacy Settings
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessAccountInfo"=dword:00000002
+"LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessCalendar_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
+
+;Change this from 2 to 0 to allow apps access to camera
+"LetAppsAccessCamera"=dword:00000002
+"LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCamera_ForceDenyTheseApps"=hex(7):00,00
+
+"LetAppsAccessContacts"=dword:00000002
+"LetAppsAccessContacts_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessContacts_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessEmail"=dword:00000002
+"LetAppsAccessEmail_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessEmail_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessEmail_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput"=dword:00000002
+"LetAppsAccessGazeInput_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessGazeInput_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessLocation"=dword:00000002
+"LetAppsAccessLocation_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessLocation_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessLocation_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging"=dword:00000002
+"LetAppsAccessMessaging_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
+
+;Change this from 2 to 0 to allow apps access to microphone
+"LetAppsAccessMicrophone"=dword:00000000
+"LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMicrophone_ForceDenyTheseApps"=hex(7):00,00
+
+"LetAppsAccessMotion"=dword:00000002
+"LetAppsAccessMotion_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessMotion_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessMotion_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications"=dword:00000002
+"LetAppsAccessNotifications_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessNotifications_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessTasks"=dword:00000002
+"LetAppsAccessTasks_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessTasks_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessTasks_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessRadios"=dword:00000002
+"LetAppsAccessRadios_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessRadios_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessRadios_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessPhone"=dword:00000002
+"LetAppsAccessPhone_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessPhone_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessPhone_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices"=dword:00000002
+"LetAppsAccessTrustedDevices_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessTrustedDevices_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo"=dword:00000002
+"LetAppsGetDiagnosticInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsGetDiagnosticInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsRunInBackground"=dword:00000002
+"LetAppsRunInBackground_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsRunInBackground_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsRunInBackground_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices"=dword:00000002
+"LetAppsSyncWithDevices_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsSyncWithDevices_ForceDenyTheseApps"=hex(7):00,00
+
+;Disable ActiveX install
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AxInstaller\AxISURLZonePolicies]
+"InstallTrustedOCX"=dword:00000000
+"InstallSignedOCX"=dword:00000000
+"InstallUnSignedOCX"=dword:00000000
+"IgnoreUnknownCA"=dword:00000000
+"IgnoreInvalidCN"=dword:00000000
+"IgnoreInvalidCertDate"=dword:00000000
+"IgnoreWrongCertUsage"=dword:00000000
+
+;Deny Application Comapatibility Telemetry
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"AITEnable"=dword:00000000
+
+;Deny Steps Recorder
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableUAR"=dword:00000001
+
+;Disable Cloud Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCloudSearch"=dword:00000000
+
+;Disable Cortana
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000
+
+;Disable Cortana Location Usage
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowSearchToUseLocation"=dword:00000000
+
+;Disable Cortana when screen is locked
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortanaAboveLock"=dword:00000000
+
+;Disable Cortana OOBE & AAD Usage
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortanaInAAD"=dword:00000001
+"AllowCortanaInAADPathOOBE"=dword:00000000
+
+;Disable Desktop Web Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableWebSearch"=dword:00000001
+
+;Disable Device Name Sent to Micro$oft in error reporting
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowDeviceNameInTelemetry"=dword:00000000
+
+;Disable Error Reporting
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
+"Disabled"=dword:00000001
+
+;Disable Event Log ASP Links
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EventViewer]
+"MicrosoftEventVwrDisableLinks"=dword:00000001
+
+;Disable Handwritting Submissions
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\HandwritingErrorReports]
+"PreventHandwritingErrorReports"=dword:00000001
+
+;Disable Handwritting Sharing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TabletPC]
+"PreventHandwritingDataSharing"=dword:00000001
+
+;Disable Help - "Did You Know"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"Headlines"=dword:00000000
+
+;Disable KB Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\HelpSvc]
+"MicrosoftKBSearch"=dword:00000000
+
+;Disable HTTP Printing
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableHTTPPrinting"=dword:00000001
+
+;Disable Internet Connection Wizard
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Internet Connection Wizard]
+"ExitOnMSICW"=dword:00000001
+
+;Allow Indexing Backoff when system in use
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableBackoff"=dword:00000000
+
+;Disable indexing of email attachments
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingEmailAttachments"=dword:00000001
+
+;Disable indexing of M$ Outlook
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingOutlook"=dword:00000001
+
+;Disable indexing of offline files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingOfflineFiles"=dword:00000001
+
+;Disable indexing while on battery power
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexOnBattery"=dword:00000001
+
+;Disable indexing of public folders
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingPublicFolders"=dword:00000001
+
+;Disable indexing of uncached exchange folder
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingUncachedExchangeFolders"=dword:00000001
+
+;Disable internet file associations
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoInternetOpenWith"=dword:00000001
+
+;Disable internet order wizard
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoWebServices"=dword:00000001
+
+;Limit diagnostic data submitted to Micro$oft 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000000
+
+;Disable indexing of delegate mailboxes
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableIndexingDelegateMailboxes"=dword:00000000
+
+;Disable M$ Messenger Customer Experience "Improvement" Program
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Messenger\Client]
+"CEIP"=dword:00000002
+
+;Disable network connectivity test
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
+@=""
+"NoActiveProbe"=dword:00000001
+
+;Disable Order Prints
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoOnlinePrintsWizard"=dword:00000001
+
+;Do not index the following files
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ExcludedExtensionsMultiline0"=".386;.aps;.bin;.bk1;.bk2;.bkf;.blf;.bsc;.btr;.cat;.cfg;.cgm;.chk;.ci;.crwl;.cur;.dat;.dbg;.dct;.dir;.dl_;.el;.evt;.ex_;.exp;.eyb;.fnt;.fon;.ghi;.gthr;.hqx;.icm;.idb;.idx;.ilk;.imc;.in_;.inl;.inv"
+"ExcludedExtensionsMultiline1"=".ipp;.jbf;.lib;.local;.log;.log1;.log2;.m14;.mac;.man;.manifest;.map;.MAPIMail;.mmf;.mui;.muimanifest;.mv;.ncb;.obj;.oc_;.ocx;.onecache;.onetoc;.onetoc2;.ost;.pch;.pdb;.pds;.pf;.pic;.pma;.pmc;.pml"
+"ExcludedExtensionsMultiline2"=".pmr;.pst;.res;.rmp;.rpc;.rsp;.sbr;.sc2;.sit;.sr_;.sy_;.sym;.TMCONTAINER00000000000000000001;.tlb;.tlh;.tmf;.tmp;.ttc;.ttf;.ttx;.TMCONTAINER00000000000000000002;.ufm;.vbx;.vxd;.wll;.wlt;.xbm;.xix;.z96;.ZFSendToTarget"
+"ExcludedExtensionsMultiline3"=""
+
+;Disable print driver downloads
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Printers]
+"DisableWebPnPDownload"=dword:00000001
+
+;Disable proxy setting for CEIP
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableEnterpriseAuthProxy"=dword:00000001
+
+;Disable publish to web
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoPublishingWizard"=dword:00000001
+
+;Disable registration wizard
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Registration Wizard Control]
+"NoRegistration"=dword:00000001
+
+;Disable remote index queries
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventRemoteQueries"=dword:00000001
+
+;Disable indexing of removable drive libraries
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableRemovableDriveIndexing"=dword:00000001
+
+;Disable Search Companion
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SearchCompanion]
+"DisableContentFileUpdates"=dword:00000001
+
+;Disable indexing of shared folders
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AutoIndexSharedFolders"=dword:00000001
+
+;Disable show feedback notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DoNotShowFeedbackNotifications"=dword:00000001
+
+;Disable web search results in start menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchUseWeb"=dword:00000000
+
+;Disable web search over metered connections
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
+
+;Disable Windows Customer Experience "Improvement" Program
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000
+
+;Enable telemetry change notifications
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableTelemetryOptInChangeNotification"=dword:00000001
+
+;Enable telemetry interface
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"DisableTelemetryOptInSettingsUx"=dword:00000001
+
+;Enable throttling of indexing mail
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"EnableThrottlingOnlineMailboxesValue"=dword:00000006
+
+;Prevent indexing when space is below 1024MB
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventIndexingLowDiskSpaceMB"=dword:00000400
+
+;Only share anonymous info in Bing searches
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"ConnectedSearchPrivacy"=dword:00000003
+
+;Disable publishing user activity to Micro$oft
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"PublishUserActivities"=dword:00000000
+
+;Disable uploading user activities to Micro$oft
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"UploadUserActivities"=dword:00000000
+
+;Disable Activity Feed
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"EnableActivityFeed"=dword:00000000
+
+;Disable Apps access to file system
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\broadFileSystemAccess]
+"Value"="Deny"
+
+;Disable Apps access to videos
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\videosLibrary]
+"Value"="Deny"
+
+;Disable Apps access to pictures
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\picturesLibrary]
+"Value"="Deny"
+
+;Disable Apps access to documents
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\documentsLibrary]
+"Value"="Deny"
+
+;Disable Apps access to cellular data
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\cellularData]
+"Value"="Deny"
+
+;Disable advanced indexing options
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"PreventUsingAdvancedIndexingOptions"=dword:00000001
+
+;Disable "Let websites provide locally relevant content by accessing my langueage list"
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+;Disable "Let Windows track app launches  to improve Start and search results"
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+
+;Disable "Ink & Typing personalization - Getting to know you"
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+;Disables silent app installs like Farmville and Candy Crush
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SilentInstalledAppsEnabled"=dword:00000000
+
+;Disables Microsoft from changing settings on YOUR computer remotely to experiment 
+;and prevent participation in Micro$oft's test program without your knowledge or consent
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System]
+"AllowExperimentation"=dword:00000000
+
+;Disable advertisements pushed via Bluetooth
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Bluetooth]
+"AllowAdvertising"=dword:00000000
+
+;Disable backing up text messages to the cloud
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Messaging]
+"AllowMessageSync"=dword:00000000
+
+;Disable Biometric features
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics]
+"Enabled"=dword:00000000
+
+;Disable apps from displaying notifications on tiles
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+"ToastEnabled"=dword:00000000
+
+;Disable App access to Name and Picture
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Deny"
+
+;Disable App access to diagnostic data
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{2297E4E2-5DBE-466D-A12B-0F8286F0D9CA}]
+"Value"="Deny"
+
+;Disable Apps accessing your camera
+;If your camera stops working for an app then change the "Value"="Allow"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam]
+"Value"="Deny"
+
+;Disable app access to SMS and MMS messages
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{52079E78-A92B-413F-B213-E8FE35712E72}]
+"Value"="Deny"
+
+;Disable apps access to contacts
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts]
+"Value"="Deny"
+
+;Disable apps access to calendar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appointments]
+"Value"="Deny"
+
+;Disable apps access to call history
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory]
+"Value"="Deny"
+
+;Disable apps access to email
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\email]
+"Value"="Deny"
+
+;Disable apps access to tasks
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks]
+"Value"="Deny"
+
+;Disable apps access to messages
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat]
+"Value"="Deny"
+
+;Disable the password reveal button
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredUI]
+"DisablePasswordReveal"=dword:00000001
+
+;Disable Tracking 1
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+;Disable Tracking 2
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
+"Start"=dword:00000004
+;Disable Tracking 3
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AutoLogger-Diagtrack-Listener]
+"Start"=dword:00000000
+
+;Disable Internet Exploder access to Digital Right Management
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WMDRM]
+"DisableOnline"=dword:00000001
+
+;Disable Apps access control to wifi, Bluetooth, etc
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{A8804298-2D5F-42E3-9531-9C8C39EB29CE}]
+"Value"="Deny"
+
+;Disable Loosely Coupled devices
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\LooselyCoupled]
+"Value"="Deny"
+
+;Enable Do Not Track for Edge
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"DoNotTrack"=dword:00000001
+
+;Disable Cortana in browser
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\ServiceUI]
+"EnableCortana"=dword:00000000
+
+;Disables address bar auto completion
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Browser]
+"AllowAddressBarDropdown"=dword:00000000
+
+;Disable Form suggestions
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"Use FormSuggest"="no"
+
+;Disable optimized web search results from taskbar
+;If you need the visually impaired features then enable this option dword:00000001
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\Main]
+"OptimizeWindowsSearchResultsForScreenReaders"=dword:00000000
+
+;Disable syncing settings across devices if using Micro$oft account
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync]
+"SyncPolicy"=dword:00000005
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000000
+
+;Disable syncing browser settings if using Micro$oft account
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000000
+
+;Disable syncing passwords if using Micro$oft account
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000000
+
+;Disable syncing Accessibility settings if using Micro$oft account
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000000
+
+;Disable syncing Advanced settings if using Micro$oft account
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
+"Enabled"=dword:00000000
+
+;Disable Cortana
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Windows Search]
+"CortanaConsent"=dword:00000000
+
+;Disable downloading speech recognition synthesis models
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Preferences]
+"ModelDownloadAllowed"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Speech]
+"AllowSpeechModelUpdate"=dword:00000000
+
+;Disable Location tracking services
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LocationAndSensors]
+"DisableLocation"=dword:00000001
+"DisableWindowsLocationProvider"=dword:00000001
+"DisableLocationScripting"=dword:00000001
+;Disables GPS and gyrosctopes.  If tablet rotate screen stops working change to dword:00000000
+"DisableSensors"=dword:00000001
+
+;Disable apps access to locations
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeviceAccess\Global\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"Value"="Deny"
+
+;Disable apps access to locations
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Permissions\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}]
+"SensorPermissionState"=dword:00000000
+
+;Disable P2P Windows Updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
+"DODownloadMode"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000000
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization]
+"SystemSettingsDownloadMode"=dword:00000000
+
+;Disable App suggestions in Start Menu
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+;Disable ads in explorer/OneDrive
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSyncProviderNotifications"=dword:00000000
+
+;Disable OneDrive access to network before logged in
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OneDrive]
+"PreventNetworkTrafficPreUserSignIn"=dword:00000001
+
+;Disable Defender Spynet file submissions
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet]
+"SpyNetReporting"=dword:00000000
+"SubmitSamplesConsent"=dword:00000002
+
+;Disables submitting infection details to Micro$oft
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontReportInfectionInformation"=dword:00000001
+
+;Disable Lock Screen Spotlight pictures, fun facts, tips, tricks, etc
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"RotatingLockScreenEnabled"=dword:00000000
+"RotatingLockScreenOverlayEnabled"=dword:00000000
+
+;Disable notifications on lock screen
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
+
+;Disable Feedback
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+"PeriodInNanoSeconds"=dword:00000000
+
+;Disable apps searching Bing
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000000
+
+;Disable tips, tricks and suggestions while using Windows
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SoftLandingEnabled"=dword:00000000
+
+;Disable periodic checks of key management for activation
+;Not recommended to enable, may brick windows activation
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform]
+;"NoGenTicket"=dword:00000001
+
+;Disable download and updates to Map data
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Maps]
+"AutoDownloadAndUpdateMapData"=dword:00000000
+;Disable unsolicitated traffic from Maps
+"AllowUntriggeredNetworkTrafficOnSettingsPage"=dword:00000000
+
+;Disable People icon in taskbar
+;Must be ran for each user to disable this setting
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People]
+"PeopleBand"=dword:00000000
+
+;Disable Netwrok Status Conection Indicator
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000000
+
