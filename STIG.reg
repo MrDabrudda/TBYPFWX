@@ -98,13 +98,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
 "LsaCfgFlags"=dword:00000001
 
-;Vulnerability ID - V-63603
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
-"HypervisorEnforcedCodeIntegrity"=dword:00000002
-
 ;Vulnerability ID - V-63607
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\EarlyLaunch]
-"DriverLoadPolicy"=dword:00000007
+"DriverLoadPolicy"=dword:00000008
 
 ;Vulnerability ID - V-63609
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}]
