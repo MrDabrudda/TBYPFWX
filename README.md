@@ -4,7 +4,9 @@
 
 *****STILL A WORK IN PROGRESS*****  NOT UPDATED YET.  WHEN THIS HEADER IS REMOVED THEN THIS VERSION IS FINAL
 
-15AUGUST2019 - Updated settings from DISA STIG v1 Release 18
+15AUGUST2019  - Updated settings from DISA STIG Windows 10-Ver 1 Release 18 
+              - Added Exploit Mitigation setting for several program as per the STIG
+              - Converted everything to a single powershell script
 
 30JUNE2019 - Added addition privacy settings.  Created a UserRegSetting.reg which sets the privacy settings correctly for each user.  This reg patch will need to be ran on every user's profile.  I plan to add it to the and Default Profiles so new users will get the correct privacy settings.
 
