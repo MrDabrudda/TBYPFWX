@@ -4,8 +4,22 @@
 #Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
 'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
 
-#Disable SMBv1 protocol -(CAT2 V-70639)
-Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+#Disable SMBv1 protocol (CAT2 V-70639)
+#Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+#Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol-Client
+Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol-Server
+
+#Disable SNMP (CAT2 V-63381)
+Disable-WindowsOptionalFeature -Online -FeatureName SNMP
+
+#Disable SimpleTCP (CAT2 V-63383)
+Disable-WindowsOptionalFeature -Online -FeatureName SimpleTCP
+
+#Disable Telnet (CAT2 V-63385)
+Disable-WindowsOptionalFeature -Online -FeatureName TelnetClient
+
+#Disable TFTP (CAT2 V-63389)
+Disable-WindowsOptionalFeature -Online -FeatureName TFTP
 
 #Enable Windows 10 Exploit Protection -DEP (CAT2 V-77091)
 Set-ProcessMitigation -System -Enable DEP
@@ -334,6 +348,48 @@ Set-Service COMSysApp -StartupType Manual
 Set-Service CDPSvc -StartupType 2
 Set-Service VaultSvc -StartupType Manual
 Set-Service CryptSvc -StartupType Automatic
+
+Set-Service "Diagnostics Tracking Service" -StartupType Disabled
+Stop-Service -Name "Diagnostics Tracking Service" -Force
+Remove-Service -Name "Diagnostics Tracking Service"
+
+Set-Service dmwappushsvc -StartupType Disabled
+Stop-Service -Name dmwappushsvc -Force
+Remove-Service -Name dmwappushsvc
+
+Set-Service DiagTrack -StartupType Disabled
+Stop-Service -Name DiagTrack -Force
+Remove-Service -Name DiagTrack
+
+Set-Service retaildemo -StartupType Disabled
+Stop-Service -Name retaildemo -Force
+Remove-Service -Name retaildemo
+
+Set-Service RemoteRegistry -StartupType Disabled
+Stop-Service -Name RemoteRegistry -Force
+
+Set-Service SSDPSRV -StartupType Disabled
+Stop-Service -Name SSDPSRV -Force
+
+Set-Service upnphost -StartupType Disabled
+Stop-Service -Name upnphost -Force
+
+Set-Service wisvc -StartupType Disabled
+Stop-Service -Name wisvc -Force
+
+Set-Service WSearch -StartupType Disabled
+Stop-Service -Name WSearch -Force
+
+Remove-Item -Path C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
+
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Uploader"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Autochk\Proxy"
+
 Set-Service DsSvc -StartupType Manual
 Set-Service DusmSvc -StartupType Automatic
 Set-Service DoSvc -StartupType 2
@@ -352,7 +408,6 @@ Set-Service MSDTC -StartupType Disabled
 Set-Service dmwappushservice -StartupType Disabled
 Set-Service Dnscache -StartupType Automatic
 Set-Service NfsClnt -StartupType Disabled
-Set-Service dmwappushsvc -StartupType Disabled
 Set-Service MapsBroker -StartupType Disabled
 Set-Service EFS -StartupType Manual
 Set-Service Eaphost -StartupType Manual
@@ -429,8 +484,6 @@ Set-Service SessionEnv -StartupType Disabled
 Set-Service TermService -StartupType Disabled
 Set-Service UmRdpService -StartupType Disabled
 Set-Service RpcLocator -StartupType Disabled
-Set-Service RemoteRegistry -StartupType Disabled
-Set-Service RetailDemo -StartupType Disabled
 Set-Service RemoteAccess -StartupType Disabled
 Set-Service seclogon -StartupType Disabled
 Set-Service SstpSvc -StartupType Manual
@@ -448,7 +501,6 @@ Set-Service SNMP -StartupType Disabled
 Set-Service SNMPTRAP -StartupType Disabled
 Set-Service SharedRealitySvc -StartupType Disabled
 Set-Service svsvc -StartupType Manual
-Set-Service SSDPSRV -StartupType Disabled
 Set-Service WiaRpc -StartupType Disabled
 Set-Service StorSvc -StartupType Manual
 Set-Service TieringEngineService -StartupType Manual
@@ -459,7 +511,6 @@ Set-Service lmhosts -StartupType Manual
 Set-Service TapiSrv -StartupType Manual
 Set-Service Themes -StartupType Automatic
 Set-Service TabletInputService -StartupType Disabled
-Set-Service upnphost -StartupType Disabled
 Set-Service UevAgentService -StartupType Disabled
 Set-Service UserManager -StartupType Automatic
 Set-Service ProfSvc -StartupType Automatic
@@ -485,7 +536,6 @@ Set-Service Wecsvc -StartupType Manual
 Set-Service EventLog -StartupType Automatic
 Set-Service FontCache -StartupType Automatic
 Set-Service stisvc -StartupType Manual
-Set-Service wisvc -StartupType Disabled
 Set-Service LicenseManager -StartupType Manual
 Set-Service Winmgmt -StartupType Automatic
 Set-Service WMPNetworkSvc -StartupType Disabled
@@ -497,7 +547,6 @@ Set-Service FontCache3.0.0.0 -StartupType Manual
 Set-Service WpnService -StartupType Manual
 Set-Service PushToInstall -StartupType Manual
 Set-Service WinRM -StartupType Disabled
-Set-Service WSearch -StartupType Disabled
 Set-Service W32Time -StartupType Automatic
 Set-Service wuauserv -StartupType Manual
 Set-Service WaaSMedicSvc -StartupType Manual
@@ -513,6 +562,8 @@ Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
 
 #Credit to https://github.com/Sycnex/Windows10Debloater
+'C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall'
+'C:\Windows\System32\OneDriveSetup.exe /uninstall'
 Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse
 Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse
 Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse
