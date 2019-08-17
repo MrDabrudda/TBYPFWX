@@ -14,14 +14,21 @@
               
 ***Backup your computer!!!  Take a Restore Point snapshot using System Restore.  I assume you know exactly what you are doing and I am not responsible for your computer getting borked up.  Use at your own risk.***
 
-1)  Import the Windows10LocalSecurityPolicy.inf into the Local Security Policy MMC. (Windows 10 Home does not have a Local Security Snap-In)
+1) Download the ZIP file by clicking on the green "Clone or download" link on the right side of the page and select "Download ZIP"
+2) Save the download to your Downloads folder
+3) Open your Downloads folder and right click the TBYPFWX-DISA-STIG-v1-Rel18.zip
+4) Select Extract ALL from the menu and select Extract from the window that pops up
+5) Click on the Start Menu icon and type POWERSHELL
+6) Right click Windows Powershell and select "Run as administrator" from the menu, click YES on the UAC warning
+7) In Powershell, Change Directory to your downloads folder...cd \users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18 and press Enter
+8) In Powershell, type set-executionpolicy unrestricted and press Enter, type A to accept ALL changers and press Enter
+9) In Powershell, type .\Win10.ps1 and press Enter, type R to Run Once and press Enter
 
-2) Run the Windows PowerShell ISE as an administrator by right clicking the Windows Powershell ISE in the Start Menu and selecting "Run As Administrator" from the menu.
-Run the following command in the PowerShell ISE to allow unsigned ps1 files to run: set-executionpolicy unrestricted
 
-3) Load and Run the Win10.ps1 in the Powershell ISE to uninstall the crap apps Microsoft installs
 
-4) Optional - Import the ALLAppsPrivacy.reg registry files to disable Windows 10 privacy invasive features.  If you only want to disable certain features then download the applicable .reg file.
+)  Type LOCAL in the start menu and RIGHT click on Local Security
+Import the Windows10LocalSecurityPolicy.inf into the Local Security Policy MMC. (Windows 10 Home does not have a Local Security Snap-In)
+
 
 5) Reboot
 
