@@ -21,8 +21,8 @@
 5) Click on the Start Menu icon and type POWERSHELL
 6) Right click "Windows Powershell" in the Start menu and select "Run as administrator" from the menu, click YES on the UAC warning
 7) In Powershell, Change Directory to your downloads folder...cd \users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18 and press Enter
-8) In Powershell, type set-executionpolicy unrestricted and press Enter, type A to accept ALL changes and press Enter
+8) In Powershell, type SET-EXECUTIONPOLICY UNRESTRICTED and press Enter, type A to accept ALL changes and press Enter
 9) In Powershell, type .\Win10.ps1 and press Enter, type R to Run Once and press Enter
-10) Reboot
+10) Reboot...THIS IS MANDATORY FOR THE NEW SETTING TO TAKE EFFECT
 
 You can download the latest DISA STIG Viewer and select "Open Checklist from File" from the top menu and open the Windows10-STIGv1_18.ckl to view which vulnerabilities are CLOSED by this project.
