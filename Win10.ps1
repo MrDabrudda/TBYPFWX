@@ -114,9 +114,6 @@ Set-ProcessMitigation -Name wmplayer.exe -Enable DEP, EnableRopStackPivot, Enabl
 #Exploit Protection Mitigation for wordpad.exe (CAT2 V-77269)
 Set-ProcessMitigation -Name wordpad.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
 
-#Import the Local Security Policy Template
-Secedit.exe /configure /db c:\windows\security\local.sdb /cfg "C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\Windows10LocalSecurityPolicy.inf"
-
 #V-63611 - Disable Guest Accounts
 Disable-LocalUser -Name "guest"
 Disable-LocalUser -Name "xguest"
