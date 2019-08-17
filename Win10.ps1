@@ -510,7 +510,10 @@ Set-Service SgrmBroker -StartupType 2
 Set-Service lmhosts -StartupType Manual
 Set-Service TapiSrv -StartupType Manual
 Set-Service Themes -StartupType Automatic
+
+#Disables CTFMON which is a 20 year old vulnerability in Windows OS
 Set-Service TabletInputService -StartupType Disabled
+
 Set-Service UevAgentService -StartupType Disabled
 Set-Service UserManager -StartupType Automatic
 Set-Service ProfSvc -StartupType Automatic
@@ -580,3 +583,6 @@ reg unload HKU\Default_User
 #Import STIG and Privacy settings
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
+
+#Import the Local Security Policy Template
+Secedit.exe /configure /db c:\windows\security\local.sdb /cfg "C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\Windows10LocalSecurityPolicy.inf"
