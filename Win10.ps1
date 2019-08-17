@@ -1,5 +1,5 @@
 #Run Powershell ISE as an Administrator and run the following command
-set-executionpolicy unrestricted
+#set-executionpolicy unrestricted
 
 ##How to list apps
 ##Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName or Get-ProvisionedAppXPackage -Online|Select DisplayName
@@ -434,7 +434,7 @@ Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
 
-<#
+
 #Credit to https://github.com/Sycnex/Windows10Debloater
 'C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall'
 'C:\Windows\System32\OneDriveSetup.exe /uninstall'
@@ -451,12 +451,15 @@ Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\Cur
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name OemPreInstalledAppsEnabled -Value 0
 reg unload HKU\Default_User
 
+
 #Import STIG and Privacy settings
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
+<#
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
+#>
 
 #Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
-#'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
+'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
 
 #Disable SMBv1 protocol (CAT2 V-70639)
 #Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
@@ -584,4 +587,3 @@ Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Impro
 Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
 Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
 Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Autochk\Proxy"
-#>
