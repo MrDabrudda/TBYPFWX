@@ -31,7 +31,7 @@
 3) Open your Downloads folder and right click the TBYPFWX-DISA-STIG-v1-Rel18.zip and select Extract All... from the menu
 4) Click Extract button
 5) Click on the Start Menu icon and type POWERSHELL
-6) Right click "Windows Powershell" (DO NOT SELECT Windows Powershell (x86) <-very important!!!) from the the Start menu and select "Run as administrator" from the menu, click YES on the UAC warning (Windows Powershell (x86) does not support the Set-PorcessMitigation command.
+6) Right click "Windows Powershell" (DO NOT SELECT Windows Powershell (x86) <-very important!!!) from the the Start menu and select "Run as administrator" from the menu, click YES on the UAC warning (Windows Powershell (x86) does not support the Set-ProcessMitigation command.
 7) In Powershell, Change Directory to your downloads folder...cd \users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18 and press Enter
 8) In Powershell, type SET-EXECUTIONPOLICY UNRESTRICTED and press Enter, type A to accept ALL changes and press Enter
 9) In Powershell, type .\Win10.ps1 and press Enter, type R to Run Once and press Enter
