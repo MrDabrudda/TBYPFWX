@@ -1,5 +1,5 @@
-##Run Powershell ISE as an admin and run the following command
-##set-executionpolicy unrestricted
+#Run Powershell ISE as an Administrator and run the following command
+#set-executionpolicy unrestricted
 
 #Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
 'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
@@ -114,6 +114,9 @@ Set-ProcessMitigation -Name wmplayer.exe -Enable DEP, EnableRopStackPivot, Enabl
 #Exploit Protection Mitigation for wordpad.exe (CAT2 V-77269)
 Set-ProcessMitigation -Name wordpad.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
 
+#Import the Local Security Policy Template
+Secedit.exe /configure /db c:\windows\security\local.sdb /cfg "C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\Windows10LocalSecurityPolicy.inf"
+
 #V-63611 - Disable Guest Accounts
 Disable-LocalUser -Name "guest"
 Disable-LocalUser -Name "xguest"
@@ -192,7 +195,6 @@ Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Micros
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxGamingOverlay*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxIdentityProvider*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Microsoft.XboxSpeechToTextOverlay*"} | Remove-AppxProvisionedPackage -Online
-
 
 ## Removes metro apps for the current user
 ##List all installed packages: Get-AppxPackage
@@ -583,6 +585,3 @@ reg unload HKU\Default_User
 #Import STIG and Privacy settings
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
-
-#Import the Local Security Policy Template
-Secedit.exe /configure /db c:\windows\security\local.sdb /cfg "C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\Windows10LocalSecurityPolicy.inf"
