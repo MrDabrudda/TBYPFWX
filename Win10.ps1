@@ -1,124 +1,5 @@
 #Run Powershell ISE as an Administrator and run the following command
-#set-executionpolicy unrestricted
-
-#Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
-'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
-
-#Disable SMBv1 protocol (CAT2 V-70639)
-#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
-#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Client
-Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Server
-
-#Disable SNMP (CAT2 V-63381)
-Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SNMP
-
-#Disable SimpleTCP (CAT2 V-63383)
-Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SimpleTCP
-
-#Disable Telnet (CAT2 V-63385)
-Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName TelnetClient
-
-#Disable TFTP (CAT2 V-63389)
-Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName TFTP
-
-#Enable Windows 10 Exploit Protection -DEP (CAT2 V-77091)
-Set-ProcessMitigation -System -Enable DEP
-
-#Enable Windows 10 Exploit Protection - ASLR (CAT2 V-77095)
-Set-Processmitigation -System -Enable BottomUp
-
-#Enable Windows 10 Exploit Protection - CFG (CAT2 V-77097)
-Set-Processmitigation -System -Enable CFG
-
-#Enable Windows 10 Exploit Protection - SEHOPS (CAT2 V-77101)
-Set-Processmitigation -System -Enable SEHOP
-
-#Enable Windows 10 Exploit Protection - TerminateOnError (CAT2 V-77103)
-Set-Processmitigation -System -Enable TerminateOnError
-
-#Exploit Protection Mitigation for Acrobat.exe
-Set-ProcessMitigation -Name Acrobat.exe -Enable DEP, BottomUp, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for Acrobat32.exe
-Set-ProcessMitigation -Name Acrobat32.exe -Enable DEP, BottomUp, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for chrome.exe
-Set-ProcessMitigation -Name chrome.exe -Enable DEP
-
-#Exploit Protection Mitigation for excel.exe
-Set-ProcessMitigation -Name excel.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for firefox.exe
-Set-ProcessMitigation -Name firefox.exe -Enable DEP, BottomUp, ForceRelocateImages
-
-#Exploit Protection Mitigation for FLTLDR.EXE
-Set-ProcessMitigation -Name FLTLDR.EXE -Enable DEP, BlockRemoteImageLoads, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec, DisallowChildProcessCreation
-
-#Exploit Protection Mitigation for GROOVE.EXE
-Set-ProcessMitigation -Name GROOVE.EXE -Enable DEP, ForceRelocateImages, BlockRemoteImageLoads, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec, DisallowChildProcessCreation
-
-#Exploit Protection Mitigation for iexplore.exe
-Set-ProcessMitigation -Name iexplore.exe -Enable DEP, BottomUp, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for infopath.exe
-Set-ProcessMitigation -Name infopath.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for java.exe
-Set-ProcessMitigation -Name java.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for javaw.exe
-Set-ProcessMitigation -Name javaw.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for javaws.exe
-Set-ProcessMitigation -Name javaws.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for lync.exe
-Set-ProcessMitigation -Name lync.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for msaccess.exe
-Set-ProcessMitigation -Name msaccess.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for mspub.exe
-Set-ProcessMitigation -Name mspub.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for onedrive.exe
-Set-ProcessMitigation -Name onedrive.exe -Enable DEP, ForceRelocateImages, BlockRemoteImageLoads, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for ois.exe
-Set-ProcessMitigation -Name ois.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for outlook.exe
-Set-ProcessMitigation -Name outlook.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for plugin-container.exe (CAT2 V-77245)
-Set-ProcessMitigation -Name plugin-container.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for powerpnt.exe (CAT2 V-77247)
-Set-ProcessMitigation -Name powerpnt.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for pptview.exe (CAT2 V-77249)
-Set-ProcessMitigation -Name pptview.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for visio.exe (CAT2 V-77255)
-Set-ProcessMitigation -Name visio.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for vpreview.exe (CAT2 V-77259)
-Set-ProcessMitigation -Name vpreview.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for winword.exe (CAT2 V-77263)
-Set-ProcessMitigation -Name winword.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for wmplayer.exe (CAT2 V-77267)
-Set-ProcessMitigation -Name wmplayer.exe -Enable DEP, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#Exploit Protection Mitigation for wordpad.exe (CAT2 V-77269)
-Set-ProcessMitigation -Name wordpad.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
-
-#V-63611 - Disable Guest Accounts
-Disable-LocalUser -Name "guest"
-Disable-LocalUser -Name "xguest"
-Disable-LocalUser -Name "WDAGUtilityAccount"
-Disable-LocalUser -Name "DefaultAccount"
+set-executionpolicy unrestricted
 
 ##How to list apps
 ##Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName or Get-ProvisionedAppXPackage -Online|Select DisplayName
@@ -379,16 +260,6 @@ Stop-Service -Name wisvc -Force
 Set-Service WSearch -StartupType Disabled
 Stop-Service -Name WSearch -Force
 
-Remove-Item -Path C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
-
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Uploader"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Autochk\Proxy"
-
 Set-Service DsSvc -StartupType Manual
 Set-Service DusmSvc -StartupType Automatic
 Set-Service DoSvc -StartupType 2
@@ -563,6 +434,7 @@ Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
 
+<#
 #Credit to https://github.com/Sycnex/Windows10Debloater
 'C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall'
 'C:\Windows\System32\OneDriveSetup.exe /uninstall'
@@ -582,3 +454,134 @@ reg unload HKU\Default_User
 #Import STIG and Privacy settings
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
+
+#Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
+#'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
+
+#Disable SMBv1 protocol (CAT2 V-70639)
+#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
+#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Client
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Server
+
+#Disable SNMP (CAT2 V-63381)
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SNMP
+
+#Disable SimpleTCP (CAT2 V-63383)
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SimpleTCP
+
+#Disable Telnet (CAT2 V-63385)
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName TelnetClient
+
+#Disable TFTP (CAT2 V-63389)
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName TFTP
+
+#Enable Windows 10 Exploit Protection -DEP (CAT2 V-77091)
+Set-ProcessMitigation -System -Enable DEP
+
+#Enable Windows 10 Exploit Protection - ASLR (CAT2 V-77095)
+Set-Processmitigation -System -Enable BottomUp
+
+#Enable Windows 10 Exploit Protection - CFG (CAT2 V-77097)
+Set-Processmitigation -System -Enable CFG
+
+#Enable Windows 10 Exploit Protection - SEHOPS (CAT2 V-77101)
+Set-Processmitigation -System -Enable SEHOP
+
+#Enable Windows 10 Exploit Protection - TerminateOnError (CAT2 V-77103)
+Set-Processmitigation -System -Enable TerminateOnError
+
+#Exploit Protection Mitigation for Acrobat.exe
+Set-ProcessMitigation -Name Acrobat.exe -Enable DEP, BottomUp, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for Acrobat32.exe
+Set-ProcessMitigation -Name Acrobat32.exe -Enable DEP, BottomUp, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for chrome.exe
+Set-ProcessMitigation -Name chrome.exe -Enable DEP
+
+#Exploit Protection Mitigation for excel.exe
+Set-ProcessMitigation -Name excel.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for firefox.exe
+Set-ProcessMitigation -Name firefox.exe -Enable DEP, BottomUp, ForceRelocateImages
+
+#Exploit Protection Mitigation for FLTLDR.EXE
+Set-ProcessMitigation -Name FLTLDR.EXE -Enable DEP, BlockRemoteImageLoads, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec, DisallowChildProcessCreation
+
+#Exploit Protection Mitigation for GROOVE.EXE
+Set-ProcessMitigation -Name GROOVE.EXE -Enable DEP, ForceRelocateImages, BlockRemoteImageLoads, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec, DisallowChildProcessCreation
+
+#Exploit Protection Mitigation for iexplore.exe
+Set-ProcessMitigation -Name iexplore.exe -Enable DEP, BottomUp, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for infopath.exe
+Set-ProcessMitigation -Name infopath.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for java.exe
+Set-ProcessMitigation -Name java.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for javaw.exe
+Set-ProcessMitigation -Name javaw.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for javaws.exe
+Set-ProcessMitigation -Name javaws.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for lync.exe
+Set-ProcessMitigation -Name lync.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for msaccess.exe
+Set-ProcessMitigation -Name msaccess.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for mspub.exe
+Set-ProcessMitigation -Name mspub.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for onedrive.exe
+Set-ProcessMitigation -Name onedrive.exe -Enable DEP, ForceRelocateImages, BlockRemoteImageLoads, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for ois.exe
+Set-ProcessMitigation -Name ois.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for outlook.exe
+Set-ProcessMitigation -Name outlook.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for plugin-container.exe (CAT2 V-77245)
+Set-ProcessMitigation -Name plugin-container.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for powerpnt.exe (CAT2 V-77247)
+Set-ProcessMitigation -Name powerpnt.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for pptview.exe (CAT2 V-77249)
+Set-ProcessMitigation -Name pptview.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for visio.exe (CAT2 V-77255)
+Set-ProcessMitigation -Name visio.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for vpreview.exe (CAT2 V-77259)
+Set-ProcessMitigation -Name vpreview.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for winword.exe (CAT2 V-77263)
+Set-ProcessMitigation -Name winword.exe -Enable DEP, ForceRelocateImages, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for wmplayer.exe (CAT2 V-77267)
+Set-ProcessMitigation -Name wmplayer.exe -Enable DEP, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#Exploit Protection Mitigation for wordpad.exe (CAT2 V-77269)
+Set-ProcessMitigation -Name wordpad.exe -Enable DEP, EnableExportAddressFilter, EnableExportAddressFilterPlus, EnableImportAddressFilter, EnableRopStackPivot, EnableRopCallerCheck, EnableRopSimExec
+
+#V-63611 - Disable Guest Accounts
+Disable-LocalUser -Name "guest"
+Disable-LocalUser -Name "xguest"
+Disable-LocalUser -Name "WDAGUtilityAccount"
+Disable-LocalUser -Name "DefaultAccount"
+
+
+Remove-Item -Path C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
+
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Uploader"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
+Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Autochk\Proxy"
+#>
