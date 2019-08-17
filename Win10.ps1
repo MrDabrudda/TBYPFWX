@@ -5,21 +5,21 @@
 'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
 
 #Disable SMBv1 protocol (CAT2 V-70639)
-#Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
-#Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol-Client
-Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol-Server
+#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
+#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Client
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Server
 
 #Disable SNMP (CAT2 V-63381)
-Disable-WindowsOptionalFeature -Online -FeatureName SNMP
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SNMP
 
 #Disable SimpleTCP (CAT2 V-63383)
-Disable-WindowsOptionalFeature -Online -FeatureName SimpleTCP
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SimpleTCP
 
 #Disable Telnet (CAT2 V-63385)
-Disable-WindowsOptionalFeature -Online -FeatureName TelnetClient
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName TelnetClient
 
 #Disable TFTP (CAT2 V-63389)
-Disable-WindowsOptionalFeature -Online -FeatureName TFTP
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName TFTP
 
 #Enable Windows 10 Exploit Protection -DEP (CAT2 V-77091)
 Set-ProcessMitigation -System -Enable DEP
