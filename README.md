@@ -9,6 +9,8 @@
 - Added Exploit Mitigation setting for several program as per the STIG
               
 - Converted everything to a single powershell script
+
+***FOLLOW THE DIRECTIONS BELOW OR YOU WILL GET AN ERROR***
               
 ***Backup your computer!!!  Take a Restore Point snapshot using System Restore.  I assume you know exactly what you are doing and I am not responsible for your computer getting borked up.  Use at your own risk.***
 
