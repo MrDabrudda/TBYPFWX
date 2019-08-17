@@ -576,3 +576,7 @@ Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\Cur
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name PreInstalledAppsEnabled -Value 0
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name OemPreInstalledAppsEnabled -Value 0
 reg unload HKU\Default_User
+
+#Import STIG and Privacy settings
+reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
+reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
