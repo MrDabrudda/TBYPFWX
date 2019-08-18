@@ -451,10 +451,9 @@ Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\Cur
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name OemPreInstalledAppsEnabled -Value 0
 reg unload HKU\Default_User
 
-
+<#
 #Import STIG and Privacy settings
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
-<#
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
 #>
 
@@ -580,10 +579,9 @@ Disable-LocalUser -Name "DefaultAccount"
 
 Remove-Item -Path C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
 
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Customer Experience Improvement Program\Uploader"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Application Experience\ProgramDataUpdater"
-Unregister-ScheduledTask -TaskName "\Microsoft\Windows\Autochk\Proxy"
+Unregister-ScheduledTask -TaskName "Consolidator" -Confirm:$False
+Unregister-ScheduledTask -TaskName "UsbCeip" -Confirm:$False
+Unregister-ScheduledTask -TaskName "KernelCeipTask" -Confirm:$False
+Unregister-ScheduledTask -TaskName "Uploader" -Confirm:$False
+Unregister-ScheduledTask -TaskName "Microsoft Compatibility Appraiser" -Confirm:$False
+
