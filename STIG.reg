@@ -98,16 +98,13 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
 "LsaCfgFlags"=dword:00000001
 
-
-;Vulnerability ID - V-63603 -DEPRECATED*****
+;Vulnerability ID - V-63603 -DEPRECATED***** V1-Rel18
 ;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard]
 ;"HypervisorEnforcedCodeIntegrity"=dword:00000002
 
 ;Vulnerability ID - V-63607
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\EarlyLaunch]
-;Good only
-;"DriverLoadPolicy"=dword:00000008
-;All -DEPRECATED******
+;Allow ALL drivers - if this is changed then BSOD will occur at bootup
 "DriverLoadPolicy"=dword:00000007
 
 ;Vulnerability ID - V-63609
@@ -138,13 +135,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
 "DontDisplayNetworkSelectionUI"=dword:00000001
 
-
-;NEW ENTRY*****
-;Vulnerability ID - V-63633
+;V-63633 - NEW ENTRY***** V1-Rel18
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
 "EnumerateLocalUsers"=dword:00000000
-
-
 
 ;Vulnerability ID - V-63639
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
@@ -218,9 +211,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "AllowTelemetry"=dword:00000000
 
-
-;NEW ENTRY*****
-;V-63685
+;V-63685 - NEW ENTRY***** V1-Rel18
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
 "EnableSmartScreen"=dword:00000001
 "ShellSmartScreenLevel"="Warn"
@@ -269,11 +260,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter]
 "EnabledV9"=dword:00000001
 
-
-;Vulnerability ID - V-63715 - DEPRECATED*****
+;Vulnerability ID - V-63715 - DEPRECATED***** V1-Rel18
 ;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
 ;"AutoDisconnect"=dword:0000000f
-
 
 ;Vulnerability ID - V-63717
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork]
@@ -287,11 +276,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters]
 "EnableSecuritySignature"=dword:00000001
 
-
-;Vulnerability ID - V-63725 - DEPRECATED*****
+;Vulnerability ID - V-63725 - DEPRECATED***** V1-Rel18
 ;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
 ;"DisableFileSyncNGSC"=dword:00000001
-
 
 ;Vulnerability ID - V-63729
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services]
@@ -333,11 +320,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
 "AllowIndexingEncryptedStoresOrItems"=dword:00000000
 
-
 ;Vulnerability ID - V-63753 -DEPRECATED*****
 ;[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
 ;"disabledomaincreds"=dword:00000001
-
 
 ;Vulnerability ID - V-63755
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
@@ -391,12 +376,9 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
 "ProtectionMode"=dword:00000001
 
-
-;NEW ENTRY*****
-;V-63817
+;V-63817 - NEW ENTRY***** V1-Rel18
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "FilterAdministratorToken"=dword:00000001
-
 
 ;Vulnerability ID - V-63825
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
@@ -463,13 +445,10 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb10]
 "Start"=dword:00000004
 
-
-;NEW ENTRY*****
-;V-82145
+;V-82145 - NEW ENTRY V1-Rel18*****
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
 "LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000001
 
-;NEW ENTRY*****
-;V-94719
+;V-94719 - NEW ENTRY V1-Rel18*****
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
 "LetAppsActivateWithVoiceAboveLock"=dword:00000002

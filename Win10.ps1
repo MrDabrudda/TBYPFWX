@@ -380,10 +380,7 @@ Set-Service SgrmBroker -StartupType 2
 Set-Service lmhosts -StartupType Manual
 Set-Service TapiSrv -StartupType Manual
 Set-Service Themes -StartupType Automatic
-
-#Disables CTFMON which is a 20 year old vulnerability in Windows OS
 Set-Service TabletInputService -StartupType Disabled
-
 Set-Service UevAgentService -StartupType Disabled
 Set-Service UserManager -StartupType Automatic
 Set-Service ProfSvc -StartupType Automatic
@@ -450,12 +447,6 @@ Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\Cur
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name PreInstalledAppsEnabled -Value 0
 Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager -Name OemPreInstalledAppsEnabled -Value 0
 reg unload HKU\Default_User
-
-<#
-#Import STIG and Privacy settings
-reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
-reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
-#>
 
 #Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
 'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
@@ -585,3 +576,55 @@ Unregister-ScheduledTask -TaskName "KernelCeipTask" -Confirm:$False
 Unregister-ScheduledTask -TaskName "Uploader" -Confirm:$False
 Unregister-ScheduledTask -TaskName "Microsoft Compatibility Appraiser" -Confirm:$False
 
+
+
+$registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy"
+If (!(Test-Path $registryPath)) {
+        New-Item $registryPath
+    }
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo_UserInControlOfTheseApps -Value ([byte[]](0x00,0x00))
+
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+
+#Delete Deprecated setting from previous STIGs
+Remove-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard -Name "HypervisorEnforcedCodeIntegrity"
+Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters -Name "AutoDisconnect"
+Remove-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive -Name "DisableFileSyncNGSC"
+Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\Lsa -Name "disabledomaincreds"
+
+<#
+#Import STIG and Privacy settings
+reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
+reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
+#>
+
+
+
+<#
+ LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessCalendar_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
+
+#>
