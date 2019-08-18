@@ -578,6 +578,21 @@ Unregister-ScheduledTask -TaskName "Microsoft Compatibility Appraiser" -Confirm:
 
 
 
+#Delete Deprecated setting from previous STIGs
+Remove-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard -Name "HypervisorEnforcedCodeIntegrity"
+Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters -Name "AutoDisconnect"
+Remove-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive -Name "DisableFileSyncNGSC"
+Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\Lsa -Name "disabledomaincreds"
+
+<#
+#Import STIG and Privacy settings
+reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
+reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
+#>
+
+
+
+<#
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy"
 If (!(Test-Path $registryPath)) {
         New-Item $registryPath
@@ -599,18 +614,8 @@ If (!(Test-Path $registryPath)) {
     Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
     Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
     Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    #>
 
-#Delete Deprecated setting from previous STIGs
-Remove-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard -Name "HypervisorEnforcedCodeIntegrity"
-Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters -Name "AutoDisconnect"
-Remove-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive -Name "DisableFileSyncNGSC"
-Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\Lsa -Name "disabledomaincreds"
-
-<#
-#Import STIG and Privacy settings
-reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
-reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
-#>
 
 
 
