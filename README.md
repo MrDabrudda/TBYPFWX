@@ -2,7 +2,7 @@
 
 18 AUG 2019
 
-- Found an issue which was causing blue screen at bootup (INACCESSIBLE BOOT DEVICE) error message due to the Driver Policy.
+- Found an issue which was causing blue screen at bootup (INACCESSIBLE BOOT DEVICE) error message due to the Early Launch Driver Policy.
 
 - Setting this key to 8 (which means only Good drivers get loaded would cause the blue screen at bootup)
 
