@@ -6,7 +6,7 @@
 
 - Setting this key to 8 (which means only Good drivers get loaded would cause the blue screen at bootup)
 
-- Set this key to 7 (which means ALL drivers get loaded)
+- Set this key to 7 (which means ALL drivers get loaded) to avoid BSOD
 
 ;Vulnerability ID - V-63607
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\EarlyLaunch]
