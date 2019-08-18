@@ -105,8 +105,10 @@ Windows Registry Editor Version 5.00
 
 ;Vulnerability ID - V-63607
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\EarlyLaunch]
-"DriverLoadPolicy"=dword:00000008
-;"DriverLoadPolicy"=dword:00000007 -DEPRECATED******
+;Good only
+;"DriverLoadPolicy"=dword:00000008
+;All -DEPRECATED******
+"DriverLoadPolicy"=dword:00000007
 
 ;Vulnerability ID - V-63609
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}]
@@ -289,7 +291,6 @@ Windows Registry Editor Version 5.00
 ;Vulnerability ID - V-63725 - DEPRECATED*****
 ;[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive]
 ;"DisableFileSyncNGSC"=dword:00000001
-
 
 
 ;Vulnerability ID - V-63729
