@@ -585,6 +585,12 @@ Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Control\Lsa -Name "disa
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\ALLAppsPrivacy.reg
 reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-DISA-STIG-v1-Rel18\STIG.reg
 
+#Disable TCP timestamps
+#A side effect of this feature is that the uptime of the remote host can sometimes be computed.
+#netsh int tcp set global timestamps=disabled
+
+
+
 <#
 $registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy"
 If (!(Test-Path $registryPath)) {
