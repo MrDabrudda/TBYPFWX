@@ -257,7 +257,7 @@ Stop-Service -Name upnphost -Force
 Set-Service wisvc -StartupType Disabled
 Stop-Service -Name wisvc -Force
 
-Set-Service WSearch -StartupType Disabled
+Set-Service WSearch -StartupType 2
 Stop-Service -Name WSearch -Force
 
 Set-Service DsSvc -StartupType Manual
