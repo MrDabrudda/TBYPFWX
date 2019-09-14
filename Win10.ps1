@@ -202,7 +202,7 @@ Get-AppxPackage -allusers *Microsoft.Xbox* | Remove-AppxPackage
 ## Disable Services
 ##Set-Service ServiceName -StartupType 4 (Disabled)|3 (Manual)|2 (Automatic Delayed)|Automatic
 <#
-Set-Service AxInstSV -StartupType Disabled
+
 Set-Service dmwappushservice -StartupType Disabled
 Set-Service AJRouter -StartupType Disabled
 Set-Service AppReadiness -StartupType Manual
@@ -249,14 +249,12 @@ Set-Service MSDTC -StartupType Disabled
 Set-Service dmwappushservice -StartupType Disabled
 Set-Service Dnscache -StartupType Automatic
 Set-Service NfsClnt -StartupType Disabled
-Set-Service MapsBroker -StartupType Disabled
 Set-Service EFS -StartupType Manual
 Set-Service Eaphost -StartupType Manual
 Set-Service fhsvc -StartupType Manual
 Set-Service fdPHost -StartupType Disabled
 Set-Service FDResPub -StartupType Disabled
 Set-Service Fax -StartupType Disabled
-Set-Service lfsvc -StartupType Disabled
 Set-Service GraphicsPerfSvc -StartupType Manual
 Set-Service hidserv -StartupType Manual
 Set-Service HvHost -StartupType Disabled
@@ -299,7 +297,6 @@ Set-Service NetSetupSvc -StartupType Manual
 Set-Service nsi -StartupType Automatic
 Set-Service NcdAutoSetup -StartupType Disabled
 Set-Service CscService -StartupType Disabled
-Set-Service ssh-agent -StartupType Disabled
 Set-Service defragsvc -StartupType Manual
 Set-Service WpcMonSvc -StartupType Disabled
 Set-Service SEMgrSvc -StartupType Disabled
@@ -334,12 +331,6 @@ Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
 Set-Service shpamsvc -StartupType Disabled
 Set-Service ShellHWDetection -StartupType Automatic
-Set-Service SCardSvr -StartupType Disabled
-Set-Service ScDeviceEnum -StartupType Disabled
-Set-Service SCPolicySvc -StartupType Disabled
-Set-Service SNMP -StartupType Disabled
-Set-Service SNMPTRAP -StartupType Disabled
-Set-Service SharedRealitySvc -StartupType Disabled
 Set-Service svsvc -StartupType Manual
 Set-Service WiaRpc -StartupType Disabled
 Set-Service StorSvc -StartupType Manual
@@ -396,13 +387,24 @@ Set-Service wmiApSrv -StartupType Disabled
 Set-Service LanmanWorkstation -StartupType Automatic
 Set-Service workfolderssvc -StartupType Disabled
 Set-Service WwanSvc -StartupType Disabled
+#>
+
+Set-Service LanmanServer -StartupType Disabled
+Set-Service lfsvc -StartupType Disabled
+Set-Service SCardSvr -StartupType Disabled
+Set-Service ScDeviceEnum -StartupType Disabled
+Set-Service SCPolicySvc -StartupType Disabled
+Set-Service SNMP -StartupType Disabled
+Set-Service SNMPTRAP -StartupType Disabled
+Set-Service SharedRealitySvc -StartupType Disabled
 Set-Service XboxGipSvc -StartupType Disabled
 Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
-#>
+Set-Service AxInstSV -StartupType Disabled
+Set-Service ssh-agent -StartupType Disabled
+Set-Service MapsBroker -StartupType Disabled
 
-Set-Service LanmanServer -StartupType Disabled
 
 Set-Service "Diagnostics Tracking Service" -StartupType Disabled
 Stop-Service -Name "Diagnostics Tracking Service" -Force
