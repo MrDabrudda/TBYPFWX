@@ -409,6 +409,8 @@ Set-Service MapsBroker -StartupType Disabled
 Set-Service "Diagnostics Tracking Service" -StartupType Disabled
 Stop-Service -Name "Diagnostics Tracking Service" -Force
 Remove-Service -Name "Diagnostics Tracking Service"
+#Windows 10 Home does not support Remove-Service
+SC DELETE "Diagnostics Tracking Service"
 
 Set-Service dmwappushsvc -StartupType Disabled
 Stop-Service -Name dmwappushsvc -Force
