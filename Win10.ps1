@@ -201,6 +201,7 @@ Get-AppxPackage -allusers *Microsoft.Xbox* | Remove-AppxPackage
 
 ## Disable Services
 ##Set-Service ServiceName -StartupType 4 (Disabled)|3 (Manual)|2 (Automatic Delayed)|Automatic
+<#
 Set-Service AxInstSV -StartupType Disabled
 Set-Service dmwappushservice -StartupType Disabled
 Set-Service AJRouter -StartupType Disabled
@@ -228,38 +229,8 @@ Set-Service COMSysApp -StartupType Manual
 Set-Service CDPSvc -StartupType 2
 Set-Service VaultSvc -StartupType Manual
 Set-Service CryptSvc -StartupType Automatic
-
-Set-Service "Diagnostics Tracking Service" -StartupType Disabled
-Stop-Service -Name "Diagnostics Tracking Service" -Force
-Remove-Service -Name "Diagnostics Tracking Service"
-
-Set-Service dmwappushsvc -StartupType Disabled
-Stop-Service -Name dmwappushsvc -Force
-Remove-Service -Name dmwappushsvc
-
-Set-Service DiagTrack -StartupType Disabled
-Stop-Service -Name DiagTrack -Force
-Remove-Service -Name DiagTrack
-
-Set-Service retaildemo -StartupType Disabled
-Stop-Service -Name retaildemo -Force
-Remove-Service -Name retaildemo
-
-Set-Service RemoteRegistry -StartupType Disabled
-Stop-Service -Name RemoteRegistry -Force
-
-Set-Service SSDPSRV -StartupType Disabled
-Stop-Service -Name SSDPSRV -Force
-
-Set-Service upnphost -StartupType Disabled
-Stop-Service -Name upnphost -Force
-
 Set-Service wisvc -StartupType Disabled
-Stop-Service -Name wisvc -Force
-
 Set-Service WSearch -StartupType 2
-Stop-Service -Name WSearch -Force
-
 Set-Service DsSvc -StartupType Manual
 Set-Service DusmSvc -StartupType Automatic
 Set-Service DoSvc -StartupType 2
@@ -361,7 +332,6 @@ Set-Service SamSs -StartupType Automatic
 Set-Service SensorDataService -StartupType Disabled
 Set-Service SensrSvc -StartupType Disabled
 Set-Service SensorService -StartupType Disabled
-Set-Service LanmanServer -StartupType Manual
 Set-Service shpamsvc -StartupType Disabled
 Set-Service ShellHWDetection -StartupType Automatic
 Set-Service SCardSvr -StartupType Disabled
@@ -430,15 +400,43 @@ Set-Service XboxGipSvc -StartupType Disabled
 Set-Service XblAuthManager -StartupType Disabled
 Set-Service XblGameSave -StartupType Disabled
 Set-Service XboxNetApiSvc -StartupType Disabled
+#>
 
+Set-Service LanmanServer -StartupType Disabled
+
+Set-Service "Diagnostics Tracking Service" -StartupType Disabled
+Stop-Service -Name "Diagnostics Tracking Service" -Force
+Remove-Service -Name "Diagnostics Tracking Service"
+
+Set-Service dmwappushsvc -StartupType Disabled
+Stop-Service -Name dmwappushsvc -Force
+Remove-Service -Name dmwappushsvc
+
+Set-Service DiagTrack -StartupType Disabled
+Stop-Service -Name DiagTrack -Force
+Remove-Service -Name DiagTrack
+
+Set-Service retaildemo -StartupType Disabled
+Stop-Service -Name retaildemo -Force
+Remove-Service -Name retaildemo
+
+Set-Service RemoteRegistry -StartupType Disabled
+Stop-Service -Name RemoteRegistry -Force
+
+Set-Service SSDPSRV -StartupType Disabled
+Stop-Service -Name SSDPSRV -Force
+
+Set-Service upnphost -StartupType Disabled
+Stop-Service -Name upnphost -Force
 
 #Credit to https://github.com/Sycnex/Windows10Debloater
+#Remove the # at the beginning of each line below to uninstall Onedrive
 'C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall'
 'C:\Windows\System32\OneDriveSetup.exe /uninstall'
-Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse
-Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse
-Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse
-Remove-Item "$env:SYSTEMDRIVE\OneDriveTemp" -Force -Recurse
+#Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse
+#Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse
+#Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse
+#Remove-Item "$env:SYSTEMDRIVE\OneDriveTemp" -Force -Recurse
 
 #Loads the registry keys/values below into the NTUSER.DAT file which prevents the apps from redownloading. Credit to a60wattfish
 #Credit to https://github.com/Sycnex/Windows10Debloater
@@ -452,8 +450,8 @@ reg unload HKU\Default_User
 'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
 
 #Disable SMBv1 protocol (CAT2 V-70639)
-#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
-#Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Client
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
+Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Client
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol-Server
 
 #Disable SNMP (CAT2 V-63381)
