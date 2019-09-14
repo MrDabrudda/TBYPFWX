@@ -413,14 +413,20 @@ Remove-Service -Name "Diagnostics Tracking Service"
 Set-Service dmwappushsvc -StartupType Disabled
 Stop-Service -Name dmwappushsvc -Force
 Remove-Service -Name dmwappushsvc
+#Windows 10 Home does not support Remove-Service
+SC DELETE dmwappushsvc
 
 Set-Service DiagTrack -StartupType Disabled
 Stop-Service -Name DiagTrack -Force
 Remove-Service -Name DiagTrack
+#Windows 10 Home does not support Remove-Service
+SC DELETE DiagTrack
 
 Set-Service retaildemo -StartupType Disabled
 Stop-Service -Name retaildemo -Force
 Remove-Service -Name retaildemo
+#Windows 10 Home does not support Remove-Service
+SC DELETE retaildemo
 
 Set-Service RemoteRegistry -StartupType Disabled
 Stop-Service -Name RemoteRegistry -Force
@@ -433,8 +439,8 @@ Stop-Service -Name upnphost -Force
 
 #Credit to https://github.com/Sycnex/Windows10Debloater
 #Remove the # at the beginning of each line below to uninstall Onedrive
-'C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall'
-'C:\Windows\System32\OneDriveSetup.exe /uninstall'
+#'C:\Windows\SysWOW64\OneDriveSetup.exe /uninstall'
+#'C:\Windows\System32\OneDriveSetup.exe /uninstall'
 #Remove-Item "$env:USERPROFILE\OneDrive" -Force -Recurse
 #Remove-Item "$env:LOCALAPPDATA\Microsoft\OneDrive" -Force -Recurse
 #Remove-Item "$env:PROGRAMDATA\Microsoft OneDrive" -Force -Recurse
