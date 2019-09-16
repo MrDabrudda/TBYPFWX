@@ -204,7 +204,6 @@ Get-AppxPackage -allusers *Microsoft.Xbox* | Remove-AppxPackage
 <#
 
 Set-Service dmwappushservice -StartupType Disabled
-Set-Service AJRouter -StartupType Disabled
 Set-Service AppReadiness -StartupType Manual
 Set-Service AppIDSvc -StartupType Manual
 Set-Service Appinfo -StartupType Manual
@@ -389,6 +388,7 @@ Set-Service workfolderssvc -StartupType Disabled
 Set-Service WwanSvc -StartupType Disabled
 #>
 
+Set-Service AJRouter -StartupType Disabled
 Set-Service LanmanServer -StartupType Disabled
 Set-Service lfsvc -StartupType Disabled
 Set-Service SCardSvr -StartupType Disabled
