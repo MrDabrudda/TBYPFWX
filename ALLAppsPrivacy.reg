@@ -15,7 +15,7 @@ Windows Registry Editor Version 5.00
 "LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
 
-;Change this from 2 to 0 to allow apps access to camera
+;Change this from 2 (Disabled) to 0 (Allow) to allow apps access to camera
 "LetAppsAccessCamera"=dword:00000002
 "LetAppsAccessCamera_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessCamera_ForceAllowTheseApps"=hex(7):00,00
@@ -42,7 +42,7 @@ Windows Registry Editor Version 5.00
 "LetAppsAccessMessaging_ForceAllowTheseApps"=hex(7):00,00
 "LetAppsAccessMessaging_ForceDenyTheseApps"=hex(7):00,00
 
-;Change this from 2 to 0 to allow apps access to microphone
+;Change this from 2 (Disable) to 0 (Allow) to allow apps access to microphone
 "LetAppsAccessMicrophone"=dword:00000000
 "LetAppsAccessMicrophone_UserInControlOfTheseApps"=hex(7):00,00
 "LetAppsAccessMicrophone_ForceAllowTheseApps"=hex(7):00,00
@@ -613,3 +613,8 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
 "EnableActiveProbing"=dword:00000000
 
+;Disable Edge pre-loading
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\Main]
+"AllowPrelaunch"=dword:00000000
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MicrosoftEdge\TabPreloader]
+"AllowTabPreloading"=dword:00000000
