@@ -1,3 +1,6 @@
+TBYPFWX Youtube Video
+https://youtu.be/0Sn4aRl7rb4
+
 # TBYPFWX - Take Back YOUR Privacy From Windows 10
 
 18 AUG 2019
