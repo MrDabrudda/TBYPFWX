@@ -457,7 +457,7 @@ Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\Cur
 reg unload HKU\Default_User
 
 #Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
-'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
+'c:\windows\system32\bcdedit.exe /set "{current}" nx OptOut'
 
 #Disable SMBv1 protocol (CAT2 V-70639)
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
