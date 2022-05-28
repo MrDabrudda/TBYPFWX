@@ -457,7 +457,7 @@ Set-ItemProperty -Path Registry::HKU\Default_User\SOFTWARE\Microsoft\Windows\Cur
 reg unload HKU\Default_User
 
 #Data Execution Prevention (DEP) to OptOut (CAT1 V-68845)
-'c:\windows\system32\bcdedit.exe /set {current} nx OptOut'
+'c:\windows\system32\bcdedit.exe /set "{current}" nx OptOut'
 
 #Disable SMBv1 protocol (CAT2 V-70639)
 Disable-WindowsOptionalFeature -Online -NoRestart -FeatureName SMB1Protocol
@@ -595,4 +595,47 @@ reg import C:\Users\$env:USERNAME\Downloads\TBYPFWX-DISA-STIG-v1-Rel18\TBYPFWX-D
 
 #Disable TCP timestamps
 #A side effect of this feature is that the uptime of the remote host can sometimes be computed.
-netsh int tcp set global timestamps=disabled
+#netsh int tcp set global timestamps=disabled
+
+
+
+<#
+$registryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy"
+If (!(Test-Path $registryPath)) {
+        New-Item $registryPath
+    }
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo_UserInControlOfTheseApps -Value ([byte[]](0x00,0x00))
+
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    Set-ItemProperty $registryPath LetAppsAccessAccountInfo -Value 2
+    #>
+
+
+
+<#
+ LetAppsAccessAccountInfo_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessAccountInfo_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessCalendar_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCalendar_ForceDenyTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessCallHistory_UserInControlOfTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceAllowTheseApps"=hex(7):00,00
+"LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
+
+#>

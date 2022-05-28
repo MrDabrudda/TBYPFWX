@@ -1,8 +1,43 @@
 Windows Registry Editor Version 5.00
 
-;Vulnerability ID - V-63325
+;Vulnerability ID - V-220947
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+"ConsentPromptBehaviorUser"=dword:00000000
+
+;Vulnerability ID - V-220945
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000002
+
+;Vulnerability ID - V-220928
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"TurnOffAnonymousBlock"=dword:00000001
+
+;Vulnerability ID - V-220902
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Kernel DMA Protection]
+"DeviceEnumerationPolicy"=dword:00000000
+
+;Vulnerability ID - V-220872
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableThirdPartySuggestions"=dword:00000001
+
+;Vulnerability ID - V-220871
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsInkWorkspace]
+"AllowWindowsInkWorkspace"=dword:00000001
+
+;Vulnerability ID - V-220870
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"AllowDomainPINLogon"=dword:00000000
+
+;Vulnerability ID - V-220861
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoPreviewPane"=dword:00000001
+"NoReadingPane"=dword:00000001
+
+;Vulnerability ID - V-63325, V-220856
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
 "AlwaysInstallElevated"=dword:00000000
+"SafeForScripting"=dword:00000000
+"EnableUserControl"=dword:00000000
 
 ;Vulnerability ID - V-63329
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
