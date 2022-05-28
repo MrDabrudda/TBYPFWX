@@ -2,6 +2,9 @@ TBYPFWX Youtube Video
 https://youtu.be/0Sn4aRl7rb4
 
 # TBYPFWX - Take Back YOUR Privacy From Windows 10
+27MAY 2022
+Updated the Windows 10 DISA STIG -V2R4.  If you have the DISA STIG Viewer you can download then Windows 10 ChkList and verify your settings.  ANYTHING SET TO NA in the DISA STIG Viewer cannot be changed in powershell or registry and is mostly USER specific.
+
 
 18 AUG 2019
 
