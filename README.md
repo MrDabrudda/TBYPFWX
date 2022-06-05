@@ -13,9 +13,10 @@ How to use this powershell tool:
 
 
 05JUNE2022
-Added Restore Point to the powershell script so it is done automatically
-Added the Local Security import of the .inf file so it is done automatically
-Added a Restart-Computer command after the script completes.
+
+- Added Restore Point to the powershell script so it is done automatically
+- Added the Local Security import of the .inf file so it is done automatically
+- Added a Restart-Computer command after the script completes.
 
 
 18 AUG 2019
