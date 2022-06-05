@@ -3,6 +3,22 @@ https://youtu.be/0Sn4aRl7rb4
 
 # TBYPFWX - Take Back YOUR Privacy From Windows 10
 
+How to use this powershell tool:
+1) Open Powershell ISE x86, Right click the Powershell ISE (x86) and select Run As Administrator
+2) Click the green Code button and select Download ZIP.  SAVE TO YOUR DOWNLOADS FOLDER ONLY
+3) Unzip the TBYPFWX-Windows10-DISA-STIG-V2R4.zip by right clicking the zip and selecting Extract All
+4) Copy and paste the following command into the Powershell terminal to allow this unsigned Win10.ps1 script to execute **set-executionpolicy unrestricted**
+5) Open the Win10.ps1 file in Powershell ISE (x86) from the **Downloads\TBYPFWX-Windows10-DISA-STIG-V2R4\TBYPFWX-Windows10-DISA-STIG-V2R4** folder
+6) Click the green Arrow to run the Win10.ps1 script
+
+
+05JUNE2022
+Added Restore Point to the powershell script so it is done automatically
+Added the Local Security import of the .inf file so it is done automatically
+Added a Restart-Computer command after the script completes.
+
+
+
 18 AUG 2019
 
 - Found an issue which was causing blue screen at bootup (INACCESSIBLE BOOT DEVICE) error message due to the Early Launch Driver Policy.
