@@ -6,7 +6,7 @@ https://youtu.be/0Sn4aRl7rb4
 How to use this powershell tool:
 1) Click the green Code button at the top of this webpage and select Download ZIP.  SAVE TO YOUR **DOWNLOADS FOLDER ONLY**
 2) Unzip the TBYPFWX-Windows10-DISA-STIG-V2R4.zip by right clicking the zip file and selecting Extract All from the menu
-3) Open Powershell ISE x86 from the menu.  Right click the Powershell ISE (x86) and select **Run As Administrator**
+3) Open Powershell ISE (x86) from the menu.  Right click the Powershell ISE (x86) and select **Run As Administrator**
 4) Copy and paste the following command into the Powershell terminal to allow this unsigned Win10.ps1 script to execute **set-executionpolicy unrestricted**
 5) Open the Win10.ps1 file in Powershell ISE (x86) from the **Downloads\TBYPFWX-Windows10-DISA-STIG-V2R4\TBYPFWX-Windows10-DISA-STIG-V2R4** folder
 6) Click the green Arrow in the toolbar to run the Win10.ps1 script
