@@ -4,6 +4,14 @@
 ##How to list apps
 ##Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName or Get-ProvisionedAppXPackage -Online|Select DisplayName
 
+cd ~\Downloads\TBYPFWX-Windows10-DISA-STIG-V2R4\TBYPFWX-Windows10-DISA-STIG-V2R4
+
+##Import Local Security Policy
+secedit /configure /db $Env:windir\security\local.sdb /cfg Windows10LocalSecurityPolicy.inf
+
+##Create a System Restore Point
+Checkpoint-Computer -Description "Restore Point-TBYPFWX" -RestorePointType "MODIFY_SETTINGS"
+
 ##Remove apps system wide
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*3DBuilder*"} | Remove-AppxProvisionedPackage -Online
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*Getstarted*"} | Remove-AppxProvisionedPackage -Online
@@ -639,3 +647,4 @@ If (!(Test-Path $registryPath)) {
 "LetAppsAccessCallHistory_ForceDenyTheseApps"=hex(7):00,00
 
 #>
+Restart-Computer -Confirm -Force
