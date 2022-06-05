@@ -4,13 +4,14 @@
 ##How to list apps
 ##Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName or Get-ProvisionedAppXPackage -Online|Select DisplayName
 
+##Create a System Restore Point
+Checkpoint-Computer -Description "Restore Point-TBYPFWX" -RestorePointType "MODIFY_SETTINGS"
+
 cd ~\Downloads\TBYPFWX-Windows10-DISA-STIG-V2R4\TBYPFWX-Windows10-DISA-STIG-V2R4
 
 ##Import Local Security Policy
 secedit /configure /db $Env:windir\security\local.sdb /cfg Windows10LocalSecurityPolicy.inf
 
-##Create a System Restore Point
-Checkpoint-Computer -Description "Restore Point-TBYPFWX" -RestorePointType "MODIFY_SETTINGS"
 
 ##Remove apps system wide
 Get-AppxProvisionedPackage -Online | Where-Object {$_.PackageName -like "*3DBuilder*"} | Remove-AppxProvisionedPackage -Online
