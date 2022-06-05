@@ -14,8 +14,8 @@ How to use this powershell tool:
 
 05JUNE2022
 
-- Added Restore Point to the powershell script so it is done automatically
-- Added the Local Security import of the .inf file so it is done automatically
+- Added a Restore Point creation to the powershell script so it is done automatically
+- Added the Local Security import of the .inf file so it is done automatically (files must be in the Downloads\TBYPFWX-Windows10-DISA-STIG-V2R4\TBYPFWX-Windows10-DISA-STIG-V2R4
 - Added a Restart-Computer command after the script completes.
 
 
