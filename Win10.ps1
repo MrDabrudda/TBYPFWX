@@ -433,6 +433,12 @@ Remove-Service -Name DiagTrack
 #Windows 10 Home does not support Remove-Service
 SC DELETE DiagTrack
 
+Set-Service SysMain -StartupType Disabled
+Stop-Service -Name SysMain -Force
+
+Set-Service WSearch -StartupType Disabled
+Stop-Service -Name WSearch -Force
+
 Set-Service retaildemo -StartupType Disabled
 Stop-Service -Name retaildemo -Force
 Remove-Service -Name retaildemo
