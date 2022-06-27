@@ -433,9 +433,11 @@ Remove-Service -Name DiagTrack
 #Windows 10 Home does not support Remove-Service
 SC DELETE DiagTrack
 
+#Disable Super Fetch service
 Set-Service SysMain -StartupType Disabled
 Stop-Service -Name SysMain -Force
 
+#Disable Windows Search
 Set-Service WSearch -StartupType Disabled
 Stop-Service -Name WSearch -Force
 
